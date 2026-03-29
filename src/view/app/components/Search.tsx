@@ -6,7 +6,7 @@ import CustomeButton from "../../components/CustomeButton";
 interface SearchProps {
   inputRef?: RefObject<HTMLInputElement | null>;
   handleOnSearch: () => void;
-  handleClean: () => void;
+  handleClean?: () => void;
   isSearching: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   inputName: string;
@@ -29,22 +29,23 @@ export default function Search({
   }, [inputRef]);
 
   return (
-    <div className="flex items-center gap-1 bg-white rounded-lg">
+    <div className="flex items-center gap-1  rounded-lg">
       <input
         ref={inputRef}
         type="search"
         name="search"
-        className={`focus:outline-none w-[250px] h-10 border border-gray-secondary p-2 rounded placeholder:text-gray-primary disabled:bg-gray-200`}
+        className={`focus:outline-none w-[250px] h-10 border bg-white border-gray-secondary p-2 rounded placeholder:text-gray-primary disabled:bg-gray-200`}
         placeholder="Buscar..."
         onChange={onChange}
         value={inputName}
         onKeyDown={(e) => e.key === "Enter" && handleOnSearch()}
       />
       <CustomeButton
-        claseButton="primary"
+        claseButton="secondary"
         height="h-10"
         onClick={handleOnSearch}
         Icon={IoMdSearch}
+        color="text-colorTres"
       />{" "}
       {buttonClean && (
         <CustomeButton

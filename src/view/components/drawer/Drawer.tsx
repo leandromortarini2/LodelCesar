@@ -1,5 +1,4 @@
 import Button from "../CustomeButton";
-import FormLogin from "../../auth/components/FormLogin";
 
 interface IProp {
   handle: () => void;
@@ -32,19 +31,15 @@ export const Drawer = ({ handle, open, onSubmit }: IProp) => {
             />
           </div>
 
-          <div className="flex flex-col gap-10 2xl:gap-12 justify-center   h-full">
+          <div className="flex flex-col gap-10 2xl:gap-12 justify-start items-center  h-full">
             <div className="w-full flex justify-center ">
-              <h2 className="text-xl 2xl:text-2xl font-semibold">
-                Ingreso de Socios
-              </h2>
+              <h2 className="text-xl 2xl:text-2xl font-semibold">Carrito</h2>
             </div>
-            <FormLogin onSubmit={onSubmit} />
-            <p className="text-primary font-semibold text-center cursor-pointer hover:text-primary/80">
-              Olvidé mi contraseña
-            </p>
-            <div className="flex justify-center">
-              <img src="/logos/logoDrawer.png" alt="" className="w-24" />
-            </div>{" "}
+            <Button
+              claseButton="primary"
+              text="Enviar Pedido"
+              onClick={onSubmit}
+            />
           </div>
         </div>
       </div>

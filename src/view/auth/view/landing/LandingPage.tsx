@@ -4,12 +4,13 @@ import InfoBar from "../../components/InfoBar";
 import Footer from "../../../components/footer/Footer";
 import IntroduccionView from "./introduccionView/IntroduccionView";
 import NavBar from "../../../components/nav-bar/NavBar";
-import { routesLanding } from "../../../../utils/routesNavBar";
+import { routesLanding, social } from "../../../../utils/routesNavBar";
 import { FormProvider } from "react-hook-form";
 import useLogicLanding from "../../hook/useLogicLanding";
 
 export default function LandingPage() {
-  const { handleDrawer, handleLogin, isOpen, method } = useLogicLanding();
+  const { handleDrawer, handleLogin, isOpen, method, handleRedirectSocial } =
+    useLogicLanding();
 
   return (
     <div>
@@ -20,7 +21,9 @@ export default function LandingPage() {
           isOpen={isOpen}
           handleDrawer={handleDrawer}
           routes={routesLanding}
+          routesSocial={social}
           scroll={true}
+          handleRedirectSocial={handleRedirectSocial}
         />
         <Home handleDrawer={handleDrawer} />
         <InfoBar />
