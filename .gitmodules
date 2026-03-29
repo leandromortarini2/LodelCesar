@@ -1,0 +1,8 @@
+[submodule "frontend-resources"]
+	path = frontend-resources
+	url = https://github.com/software-novagestion/frontend-resources.git
+	branch = main
+[submodule "src/frontend-resources"]
+	path = src/frontend-resources
+	url = https://github.com/software-novagestion/frontend-resources.git
+	branch = main
