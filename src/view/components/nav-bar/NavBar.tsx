@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Logo from "./Logo";
 import PanelButton from "./PanelButton";
 import type { RoutesNavBar } from "../../../interfaces/RoutesNavBar";
