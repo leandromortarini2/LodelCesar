@@ -1,12 +1,12 @@
 import { Drawer } from "../../../components/drawer/Drawer";
 import Home from "./homeView/view/Home";
-import InfoBar from "../../components/InfoBar";
+// import InfoBar from "../../components/InfoBar";
 import Footer from "../../../components/footer/Footer";
-import IntroduccionView from "./introduccionView/IntroduccionView";
 import NavBar from "../../../components/nav-bar/NavBar";
 import { routesLanding, social } from "../../../../utils/routesNavBar";
 import { FormProvider } from "react-hook-form";
 import useLogicLanding from "../../hook/useLogicLanding";
+import Products from "./introduccionView/IntroduccionView";
 
 export default function LandingPage() {
   const { handleDrawer, handleLogin, isOpen, method, handleRedirectSocial } =
@@ -26,8 +26,9 @@ export default function LandingPage() {
           handleRedirectSocial={handleRedirectSocial}
         />
         <Home handleDrawer={handleDrawer} />
-        <InfoBar />
-        <IntroduccionView handleDrawer={handleDrawer} />
+        {/* <InfoBar /> */}
+        {/* <Products handleDrawer={handleDrawer} /> */}
+        <Products />
         <Footer />
         <Drawer onSubmit={handleLogin} handle={handleDrawer} open={isOpen} />
       </FormProvider>
