@@ -1,0 +1,15 @@
+export const categories = [
+  { id: "sandwiches", label: "Sándwiches" },
+  { id: "hamburguesas", label: "Hamburguesas" },
+  { id: "pollo-grille", label: "Pollo al Grill" },
+  { id: "choripan", label: "Choripanes" },
+  { id: "patynesa", label: "Patynesas" },
+  { id: "empanadas", label: "Empanadas" },
+  { id: "papas-fritas", label: "Papas Fritas" },
+  { id: "tacos", label: "Tacos" },
+  { id: "ensaladas", label: "Ensaladas" },
+  { id: "pizzas", label: "Pizzas" },
+  { id: "pizzas-individuales", label: "Pizzas Individuales" },
+  { id: "al-plato", label: "Al Plato" },
+  { id: "promos", label: "Promociones" },
+];

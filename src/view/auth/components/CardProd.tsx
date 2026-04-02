@@ -1,20 +1,24 @@
-export default function CardProd() {
+export default function CardProd({ producto }: any) {
+  const { nombre, descripcion, precio, img } = producto;
   return (
     <div className="card bg-base-100 flex-1 shadow-sm">
       <figure>
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+          src={
+            img ||
+            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp "
+          }
+          alt={nombre}
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Card Title</h2>
-        <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
-        </p>
+        <h2 className="card-title">{nombre}</h2>
+        <p>{descripcion}</p>
+        <p className="font-semibold">${precio}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary border-none shadow-sm   text-default-text bg-colorUno">
+            Agregar
+          </button>
         </div>
       </div>
     </div>

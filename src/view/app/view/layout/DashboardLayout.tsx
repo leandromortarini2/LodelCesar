@@ -14,6 +14,7 @@ export default function DashboardLayout() {
         openModal={openModal}
         closeModal={closeModal}
         isOpen={isOpen}
+        handleDrawer={() => {}}
       />
       {isOpen && (
         <PersonModal user={"john.parker@example.com"} operator={"998"} />
