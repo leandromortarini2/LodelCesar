@@ -8,6 +8,7 @@ import { useMutation } from "@tanstack/react-query";
 import { login } from "../services/login";
 import Cookies from "js-cookie";
 import { useConfigStore } from "../../app/store/storeConfig";
+import type { RoutesNavBar } from "../../../interfaces/RoutesNavBar";
 
 export default function useLogicLanding() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,12 +78,30 @@ export default function useLogicLanding() {
   function handleDrawer() {
     setIsOpen(!isOpen);
   }
+
+  function handleRedirectSocial(route: RoutesNavBar) {
+    customeAlert({
+      title: `Serás redirigido a ${route?.text}`,
+      text: "¿Estas seguro?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#32B16E",
+      cancelButtonColor: "#ef4444",
+      confirmButtonText: "Si",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.replace(route.url);
+      }
+    });
+  }
+
   return {
     handleLogin,
     handleDrawer,
     isOpen,
     method,
-
+    handleRedirectSocial,
     customeAlert,
   };
 }
