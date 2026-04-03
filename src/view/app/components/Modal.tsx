@@ -1,6 +1,7 @@
 import React from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 import CustomeButton from "../../components/CustomeButton";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 interface IPropsModal {
   close?: () => void;
@@ -30,21 +31,21 @@ export const Modal: React.FC<IPropsModal> = ({
           modalWidth ? modalWidth : "w-full max-w-3xl"
         }`}
       >
-        {buttonClose && (
-          <div className="flex items-start justify-end w-full h-10 ">
+        <div className="flex items-start justify-between w-full h-12 ">
+          {title && (
+            <h3 className="mb-6 text-2xl font-semibold text-center text-primaryBlue">
+              {title}
+            </h3>
+          )}
+          {buttonClose && (
             <CustomeButton
               onClick={close}
-              Icon={RiCloseCircleLine}
+              Icon={IoMdCloseCircleOutline}
               color="white"
               claseButton="secondary"
             />
-          </div>
-        )}
-        {title && (
-          <h3 className="mb-6 text-2xl font-semibold text-center text-primaryBlue">
-            {title}
-          </h3>
-        )}
+          )}
+        </div>
 
         {children}
       </div>
