@@ -13,6 +13,7 @@ export default function useProductsView() {
   }
 
   function handleCloseModal() {
+    setProdSelected(null);
     setOpenModalProd(false);
   }
 

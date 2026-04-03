@@ -25,7 +25,6 @@ export default function Products() {
         <h1 className="text-2xl lg:text-3xl font-semibold text-colorTres lg:text-left">
           Nuestros Platos
         </h1>
-
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {categories.map((cat) => (
             <CategoryCard
