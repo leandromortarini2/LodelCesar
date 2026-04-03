@@ -6,7 +6,7 @@ import NavBar from "../../../components/nav-bar/NavBar";
 import { routesLanding, social } from "../../../../utils/routesNavBar";
 import { FormProvider } from "react-hook-form";
 import useLogicLanding from "../../hook/useLogicLanding";
-import Products from "./introduccionView/IntroduccionView";
+import Products from "./ProductsView/Products";
 
 export default function LandingPage() {
   const { handleDrawer, handleLogin, isOpen, method, handleRedirectSocial } =

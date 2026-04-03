@@ -8,6 +8,7 @@ interface IPropsModal {
   children: React.ReactNode;
   modalWidth?: string;
   buttonClose?: boolean;
+  colorBg?: string;
 }
 
 export const Modal: React.FC<IPropsModal> = ({
@@ -16,6 +17,7 @@ export const Modal: React.FC<IPropsModal> = ({
   children,
   modalWidth,
   buttonClose,
+  colorBg,
 }) => {
   return (
     <div
@@ -24,7 +26,7 @@ export const Modal: React.FC<IPropsModal> = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`flex flex-col items-center  p-8 bg-white rounded-lg shadow-xl ${
+        className={`flex flex-col items-center  p-8 ${colorBg ? colorBg : "bg-white"} rounded-lg shadow-xl ${
           modalWidth ? modalWidth : "w-full max-w-3xl"
         }`}
       >
