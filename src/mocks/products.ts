@@ -1,11 +1,12 @@
 export const products = [
+  //region sanguches
   {
     id: 1,
     nombre: "Carne",
     descripcion: "Lechuga y tomate",
     precio: "6500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Milanesa",
   },
   {
     id: 2,
@@ -13,7 +14,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "7500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Milanesa",
   },
   {
     id: 3,
@@ -21,7 +22,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "9000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Milanesa",
   },
   {
     id: 4,
@@ -29,7 +30,7 @@ export const products = [
     descripcion: "Lechuga y tomate",
     precio: "4500",
     img: "https://i.imgur.com/J9UOzsg.jpeg",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Milanesa",
   },
   {
     id: 5,
@@ -37,7 +38,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "5500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Milanesa",
   },
   {
     id: 6,
@@ -45,7 +46,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "7000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Milanesa",
   },
   {
     id: 7,
@@ -53,7 +54,7 @@ export const products = [
     descripcion: "Lechuga y tomate",
     precio: "6500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Bondiola",
   },
   {
     id: 8,
@@ -61,7 +62,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "7500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Bondiola",
   },
   {
     id: 9,
@@ -69,8 +70,9 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "9000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "sandwiches",
+    categoria: "Sanguche de Bondiola",
   },
+  //region hamburguesas
   {
     id: 10,
     nombre: "Hamburguesa",
@@ -95,6 +97,7 @@ export const products = [
     img: "https://i.imgur.com/NPbaApy.jpeg",
     categoria: "hamburguesas",
   },
+  //region pollo grille
   {
     id: 13,
     nombre: "Pollo Grille",
@@ -119,6 +122,7 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "pollo-grille",
   },
+  //region choripan
   {
     id: 16,
     nombre: "Choripan",
@@ -135,6 +139,7 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "choripan",
   },
+  //region patynesa
   {
     id: 18,
     nombre: "Patynesa",
@@ -159,6 +164,7 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "patynesa",
   },
+  //region empanadas
   {
     id: 21,
     nombre: "Empanada Pollo",
@@ -175,6 +181,7 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "empanadas",
   },
+  //region papas
   {
     id: 23,
     nombre: "Cono de Papas",
@@ -191,6 +198,7 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "papas-fritas",
   },
+  //region tacos
   {
     id: 25,
     nombre: "Tacos x3",
@@ -199,6 +207,7 @@ export const products = [
     img: "https://i.imgur.com/Kkc77BP.jpeg",
     categoria: "tacos",
   },
+  //region ensaladas
   {
     id: 26,
     nombre: "Ensalada",
@@ -215,6 +224,7 @@ export const products = [
     img: "https://i.imgur.com/ScVu1Cv.jpeg",
     categoria: "ensaladas",
   },
+  //region pizzas
   {
     id: 28,
     nombre: "Muzza",
@@ -287,6 +297,7 @@ export const products = [
     img: "https://i.imgur.com/PJF2c6C.jpeg",
     categoria: "pizzas",
   },
+  //region pizzas individuales
   {
     id: 37,
     nombre: "Pizza Individual",
@@ -343,6 +354,7 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "pizzas-individuales",
   },
+  //region al plato
   {
     id: 44,
     nombre: "Mila de Pollo ",
@@ -375,13 +387,14 @@ export const products = [
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "al-plato",
   },
+  //region promos
   {
     id: 48,
     nombre: "Sang. Mila + Papas chicas",
     descripcion: "Milanesa de pollo, lechuga y tomate",
     precio: "6000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "promos",
+    categoria: "Promos",
   },
   {
     id: 49,
@@ -389,7 +402,7 @@ export const products = [
     descripcion: "Milanesa de carne, lechuga y tomate",
     precio: "8000",
     img: "https://i.imgur.com/nqZGAjX.jpeg",
-    categoria: "promos",
+    categoria: "Promos",
   },
   {
     id: 50,
@@ -397,7 +410,7 @@ export const products = [
     descripcion: "Patynesa, lechuga y tomate",
     precio: "6000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "promos",
+    categoria: "Promos",
   },
   {
     id: 51,
@@ -405,7 +418,7 @@ export const products = [
     descripcion: "Por unidad",
     precio: "2000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "promos",
+    categoria: "Promos",
   },
   {
     id: 52,
@@ -413,7 +426,7 @@ export const products = [
     descripcion: "Hamburguesa, lechuga y tomate",
     precio: "6000",
     img: "https://i.imgur.com/3EQ1rrx.jpeg",
-    categoria: "promos",
+    categoria: "Promos",
   },
   {
     id: 53,
@@ -421,6 +434,6 @@ export const products = [
     descripcion: "Sanguche de bondiola, lechuga y tomate",
     precio: "8000",
     img: "https://i.imgur.com/aHFTmhs.jpeg",
-    categoria: "promos",
+    categoria: "Promos",
   },
 ];

@@ -2,9 +2,14 @@ import type { Category } from "../view/auth/view/landing/ProductsView/types";
 
 export const categories: Category[] = [
   {
-    id: "sandwiches",
-    label: "Sándwiches",
+    id: "Sanguche de Milanesa",
+    label: "Sanguche de Milanesa",
     img: "https://i.imgur.com/J9UOzsg.jpeg",
+  },
+  {
+    id: "Sanguche de Bondiola",
+    label: "Sanguche de Bondiola",
+    img: "https://i.imgur.com/aHFTmhs.jpeg",
   },
   {
     id: "hamburguesas",
@@ -54,8 +59,8 @@ export const categories: Category[] = [
     img: "https://i.imgur.com/Cj0YtkB.jpeg",
   },
   {
-    id: "promos",
-    label: "Promociones",
+    id: "Promos",
+    label: "Promos",
     img: "https://i.imgur.com/aHFTmhs.jpeg",
   },
 ];

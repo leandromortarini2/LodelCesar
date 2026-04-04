@@ -32,6 +32,8 @@ export default function useProductsView() {
   }
 
   function handleAddToCart() {
+    if (!prodSelected) return;
+
     customeAlert({
       title: "¿Desea agregar al carrito?",
       icon: "warning",
@@ -40,7 +42,19 @@ export default function useProductsView() {
       showCancelButton: true,
     }).then((result) => {
       if (result.isConfirmed) {
-        setCart([...cart, prodSelected as Product]);
+        const existingProd = cart.find((item) => item.id === prodSelected.id);
+
+        if (existingProd) {
+          const updatedCart = cart.map((item) =>
+            item.id === prodSelected.id
+              ? { ...item, cantidad: (item.cantidad || 1) + 1 }
+              : item,
+          );
+          setCart(updatedCart);
+        } else {
+          setCart([...cart, { ...prodSelected, cantidad: 1 }]);
+        }
+
         handleCloseModal();
         customeAlert({
           title: "Producto agregado al carrito",

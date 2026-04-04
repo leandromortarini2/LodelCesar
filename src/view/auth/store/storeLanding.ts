@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { Product } from "../view/landing/ProductsView/types";
+import type { ProductCart } from "../view/landing/ProductsView/types";
 
 const useLandingStore = create<{
   openModal: boolean;
@@ -8,8 +8,8 @@ const useLandingStore = create<{
   disabled: boolean;
   setDisabled: (disabled: boolean) => void;
 
-  cart: Product[];
-  setCart: (cart: Product[]) => void;
+  cart: ProductCart[];
+  setCart: (cart: ProductCart[]) => void;
 }>()((set) => ({
   openModal: false,
   setOpenModal: (openModal: boolean) => set({ openModal }),
@@ -18,7 +18,7 @@ const useLandingStore = create<{
   setDisabled: (disabled: boolean) => set({ disabled }),
 
   cart: [],
-  setCart: (cart: Product[]) => set({ cart }),
+  setCart: (cart: ProductCart[]) => set({ cart }),
 }));
 
 export default useLandingStore;

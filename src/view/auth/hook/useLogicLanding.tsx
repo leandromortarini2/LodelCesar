@@ -1,23 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import customeAlert from "../../../utils/customeAlert";
 import useLandingStore from "../store/storeLanding";
-import { useMutation } from "@tanstack/react-query";
-import { login } from "../services/login";
-import Cookies from "js-cookie";
-import { useConfigStore } from "../../app/store/storeConfig";
 import type { RoutesNavBar } from "../../../interfaces/RoutesNavBar";
 
 export default function useLogicLanding() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const { setDisabled } = useLandingStore();
   const cart = useLandingStore((state) => state.cart);
-  const { entornoApi, modoApi } = useConfigStore((state) => state);
-
-  const navigate = useNavigate();
+  const setCart = useLandingStore((state) => state.setCart);
 
   const method = useForm({
     defaultValues: {
@@ -29,54 +21,7 @@ export default function useLogicLanding() {
     reValidateMode: "onChange",
   });
 
-  const {
-    watch,
-    formState: { isValid },
-  } = method;
-
-  const usuario = watch("usuario");
-  const operador = watch("operador");
-  const password = watch("password");
-
-  const auth = useMutation({
-    mutationFn: login,
-    onSuccess: (data) => {
-      Cookies.set("accessToken", data.data.token, { expires: 1 });
-      navigate("/dashboard", { replace: true });
-    },
-    onError: (error: any) => {
-      const errorMessage =
-        error.response?.data?.message || error.message || "Error desconocido";
-      customeAlert({
-        title: "Credenciales incorrectas",
-        text: errorMessage,
-        icon: "warning",
-      });
-    },
-  });
-
-  const handleLogin = async () => {
-    const payload = {
-      usuario,
-      password,
-      entornoApi,
-      operador,
-      _m: modoApi,
-      _e: "000030",
-    };
-
-    await auth.mutateAsync(payload);
-  };
-
-  useEffect(() => {
-    if (isValid) {
-      setDisabled(false);
-    } else {
-      setDisabled(true);
-    }
-  }, [isValid, operador, setDisabled]);
-
-  function handleDrawer() {
+  function handleClose() {
     setIsOpen(!isOpen);
   }
 
@@ -97,13 +42,80 @@ export default function useLogicLanding() {
     });
   }
 
+  function updateQuantity(id: number, delta: number) {
+    const updatedCart = cart.map((item) => {
+      if (item.id === id) {
+        const newQty = (item.cantidad || 1) + delta;
+        return { ...item, cantidad: newQty > 0 ? newQty : 1 };
+      }
+      return item;
+    });
+    setCart(updatedCart);
+  }
+
+  const totalCart = cart.reduce(
+    (acc, item) => acc + Number(item.precio) * (item.cantidad || 1),
+    0,
+  );
+
+  function onDeleteProdCart(id: number) {
+    customeAlert({
+      title: "¿Desea eliminar el producto del carrito?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#32B16E",
+      cancelButtonColor: "#ef4444",
+      confirmButtonText: "Si",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const updatedCart = cart.filter((item) => item.id !== id);
+        setCart(updatedCart);
+      }
+    });
+  }
+
+  function handleSubmitCart() {
+    if (cart.length === 0) return;
+
+    let message = `* Nuevo Pedido - Del Cesar\n`;
+    message += `--------------------------\n\n`;
+
+    cart.forEach((item) => {
+      const categoriaMostrada =
+        item.categoria === "Sanguche de Milanesa" && "Sanguche de Milanesa";
+
+      const subtotal = Number(item.precio) * (item.cantidad || 1);
+
+      message += `-  ${categoriaMostrada ? `*${categoriaMostrada}* (${item.nombre})` : `*${item.nombre}*`} \n`;
+      if (item.descripcion) message += `- Descripcion: ${item.descripcion}\n`;
+      message += `- Precio unit: $${item.precio}\n`;
+      message += `- Cantidad: ${item.cantidad || 1}\n`;
+      message += `- Subtotal: *$${subtotal}*\n`;
+      message += `\n`;
+      message += `--------------------------\n`;
+    });
+
+    message += `*TOTAL A PAGAR: $${totalCart}*\n\n`;
+
+    const encodedMessage = encodeURIComponent(message);
+
+    const phoneNumber = "5491165149673";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, "_blank");
+  }
+
   return {
-    handleLogin,
-    handleDrawer,
+    handleSubmitCart,
+    handleClose,
     isOpen,
     method,
     handleRedirectSocial,
     customeAlert,
     cart,
+    updateQuantity,
+    totalCart,
+    onDeleteProdCart,
   };
 }

@@ -10,37 +10,43 @@ import Products from "./ProductsView/Products";
 
 export default function LandingPage() {
   const {
-    handleDrawer,
-    handleLogin,
+    handleClose,
+    handleSubmitCart,
     isOpen,
     method,
     handleRedirectSocial,
     cart,
+    updateQuantity,
+    totalCart,
+    onDeleteProdCart,
   } = useLogicLanding();
 
   return (
     <div>
       <FormProvider {...method}>
         <NavBar
-          openModal={handleDrawer}
-          closeModal={handleDrawer}
+          openModal={handleClose}
+          closeModal={handleClose}
           isOpen={isOpen}
-          handleDrawer={handleDrawer}
+          handleDrawer={handleClose}
           routes={routesLanding}
           routesSocial={social}
           scroll={true}
           handleRedirectSocial={handleRedirectSocial}
         />
-        <Home handleDrawer={handleDrawer} />
+        <Home handleDrawer={handleClose} />
         {/* <InfoBar /> */}
         {/* <Products handleDrawer={handleDrawer} /> */}
         <Products />
         <Footer />
         <Drawer
-          onSubmit={handleLogin}
-          handle={handleDrawer}
+          onSubmit={handleSubmitCart}
           open={isOpen}
           cart={cart}
+          updateQuantity={updateQuantity}
+          totalCart={totalCart}
+          onDeleteProdCart={onDeleteProdCart}
+          handleClose={handleClose}
         />
       </FormProvider>
     </div>
