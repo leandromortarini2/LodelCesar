@@ -17,6 +17,7 @@ export default function Products() {
     handleCloseModal,
     prodSelected,
     handleSelectProd,
+    handleAddToCart,
   } = useProductsView();
   console.log(prodSelected);
   return (
@@ -63,6 +64,7 @@ export default function Products() {
                     text="Agregar al Pedido"
                     color="bg-success"
                     sizeText="text-base"
+                    onClick={handleAddToCart}
                   />
                 </div>
               )}

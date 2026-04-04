@@ -14,6 +14,7 @@ export default function useLogicLanding() {
   const [isOpen, setIsOpen] = useState(false);
 
   const { setDisabled } = useLandingStore();
+  const cart = useLandingStore((state) => state.cart);
   const { entornoApi, modoApi } = useConfigStore((state) => state);
 
   const navigate = useNavigate();
@@ -103,5 +104,6 @@ export default function useLogicLanding() {
     method,
     handleRedirectSocial,
     customeAlert,
+    cart,
   };
 }

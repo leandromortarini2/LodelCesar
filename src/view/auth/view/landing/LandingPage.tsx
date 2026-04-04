@@ -9,8 +9,14 @@ import useLogicLanding from "../../hook/useLogicLanding";
 import Products from "./ProductsView/Products";
 
 export default function LandingPage() {
-  const { handleDrawer, handleLogin, isOpen, method, handleRedirectSocial } =
-    useLogicLanding();
+  const {
+    handleDrawer,
+    handleLogin,
+    isOpen,
+    method,
+    handleRedirectSocial,
+    cart,
+  } = useLogicLanding();
 
   return (
     <div>
@@ -30,7 +36,12 @@ export default function LandingPage() {
         {/* <Products handleDrawer={handleDrawer} /> */}
         <Products />
         <Footer />
-        <Drawer onSubmit={handleLogin} handle={handleDrawer} open={isOpen} />
+        <Drawer
+          onSubmit={handleLogin}
+          handle={handleDrawer}
+          open={isOpen}
+          cart={cart}
+        />
       </FormProvider>
     </div>
   );

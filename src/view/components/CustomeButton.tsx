@@ -15,6 +15,8 @@ interface props {
   type?: "button" | "reset" | "submit";
   disabled?: boolean;
   sizeText?: string;
+  containerClass?: string;
+  colorBg?: string;
 }
 
 const CustomeButton = ({
@@ -32,12 +34,14 @@ const CustomeButton = ({
   disabled,
   sizeText,
   borderColor,
+  containerClass,
+  colorBg,
 }: props) => {
   const disabledStyles =
     "bg-gray-primary opacity-75 cursor-not-allowed pointer-events-none border-gray-primary";
 
   return (
-    <div className="flex gap-10">
+    <div className={` ${containerClass} flex gap-10`}>
       {claseButton === "primary" && Icon && (
         <button
           disabled={disabled}
@@ -89,7 +93,7 @@ const CustomeButton = ({
           type={type}
           onClick={onclick}
           className={`
-            py-2 px-3 rounded text-center flex items-center justify-center gap-2 font-semibold bg-white
+            py-2 px-3 rounded text-center flex items-center justify-center gap-2 font-semibold ${colorBg ? colorBg : "bg-white"} 
             ${sizeText ? sizeText : "text-xs"}
             ${positionIcon === "left" ? "" : "flex-row-reverse"}
             ${width} ${height}
@@ -122,7 +126,7 @@ const CustomeButton = ({
             ${
               disabled
                 ? `${disabledStyles} text-white`
-                : `bg-white cursor-pointer ${color ? color : "text-primary"} ${
+                : ` ${colorBg ? colorBg : "bg-white"}  cursor-pointer ${color ? color : "text-primary"} ${
                     hover ? hover : "hover:bg-white-secondary"
                   } ${
                     border
