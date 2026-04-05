@@ -7,7 +7,7 @@ export default function DailySpecial({
   handleConsult: () => void;
 }) {
   return (
-    <section className="w-full py-12 px-4 bg-colorTres/5  my-10 ">
+    <section className="w-full py-12 px-4 bg-white-secondary  py-10 ">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4 relative">
           <div className="overflow-hidden rounded-2xl shadow-xl rotate-[-3deg] hover:rotate-0 transition-transform duration-500">

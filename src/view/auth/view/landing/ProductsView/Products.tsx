@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { categories } from "../../../../../mocks/categories";
 import { products } from "../../../../../mocks/products";
 import CardProd from "../../../components/CardProd";
@@ -18,7 +19,10 @@ export default function Products({
   handleAddToCart,
 }: any) {
   return (
-    <Element name="intro-1" className="flex flex-col gap-6 py-10 md:pt-0">
+    <Element
+      name="intro-1"
+      className="flex flex-col gap-6 py-10 md:pt-0 bg-background"
+    >
       <div className="w-full gap-4 flex flex-col p-2">
         <h1 className="text-2xl lg:text-3xl font-semibold text-colorTres lg:text-left">
           Nuestros Platos

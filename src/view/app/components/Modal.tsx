@@ -21,12 +21,12 @@ export const Modal: React.FC<IPropsModal> = ({
 }) => {
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 "
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/20  "
       onClick={close}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`flex flex-col items-center  p-8 ${colorBg ? colorBg : "bg-white"} rounded-lg shadow-xl ${
+        className={`flex flex-col items-center  p-8 ${colorBg ? colorBg : "bg-white"} h-screen overflow-y-scroll shadow-xl ${
           modalWidth ? modalWidth : "w-full max-w-3xl"
         }`}
       >
