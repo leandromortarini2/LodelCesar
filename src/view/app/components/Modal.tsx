@@ -26,13 +26,13 @@ export const Modal: React.FC<IPropsModal> = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`flex flex-col items-center  p-8 ${colorBg ? colorBg : "bg-white"} h-screen overflow-y-scroll shadow-xl ${
+        className={`flex flex-col items-center gap-4  py-12 px-10 ${colorBg ? colorBg : "bg-white"} h-screen  shadow-xl ${
           modalWidth ? modalWidth : "w-full max-w-3xl"
         }`}
       >
-        <div className="flex items-start justify-between w-full h-12 ">
+        <div className="flex items-start justify-between w-full ">
           {title && (
-            <h3 className="mb-6 text-2xl font-semibold text-center text-primaryBlue">
+            <h3 className=" text-2xl font-semibold text-center text-primaryBlue">
               {title}
             </h3>
           )}
