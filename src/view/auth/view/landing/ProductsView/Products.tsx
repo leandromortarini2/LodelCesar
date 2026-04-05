@@ -63,19 +63,18 @@ export default function Products({
                   ),
               )}
 
-              {prodSelected && (
-                <div className="absolute bottom-5 right-10">
-                  <CustomeButton
-                    claseButton="primary"
-                    Icon={IoCart}
-                    text="Agregar al Pedido"
-                    color="bg-btn-wp"
-                    hover="hover:bg-btn-wp/90"
-                    sizeText="text-base"
-                    onClick={handleAddToCart}
-                  />
-                </div>
-              )}
+              <div className="absolute bottom-5 right-10">
+                <CustomeButton
+                  claseButton="primary"
+                  Icon={IoCart}
+                  text="Agregar al Pedido"
+                  color="bg-btn-wp"
+                  hover="hover:bg-btn-wp/90"
+                  sizeText="text-base"
+                  onClick={handleAddToCart}
+                  disabled={!prodSelected}
+                />
+              </div>
             </div>
           </Modal>
         )}

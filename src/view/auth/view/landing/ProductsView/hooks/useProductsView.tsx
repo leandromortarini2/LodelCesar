@@ -6,7 +6,7 @@ import customeAlert from "../../../../../../utils/customeAlert";
 import { categories } from "../../../../../../mocks/categories";
 import { scroller } from "react-scroll";
 
-export default function useProductsView() {
+export default function useProductsView({ openDrawer }: { openDrawer: any }) {
   const cart = useLandingStore((state) => state.cart);
   const setCart = useLandingStore((state) => state.setCart);
 
@@ -51,29 +51,6 @@ export default function useProductsView() {
       handleOpenModal(foundCategory);
       return;
     }
-
-    // const foundProduct = products.find((prod) =>
-    //   prod.nombre.toLowerCase().includes(term),
-    // );
-
-    // if (foundProduct) {
-    //   const parentCategory = categories.find(
-    //     (cat) => cat.id === foundProduct.categoria,
-    //   );
-    //   if (parentCategory) {
-    //     setCategorySelected(parentCategory);
-    //     setProdSelected(foundProduct);
-    //     setOpenModalProd(true);
-    //     redirectProducts();
-    //   }
-    //   return;
-    // }
-
-    // customeAlert({
-    //   title: "Sin resultados",
-    //   icon: "info",
-    //   text: "Intenta con otro plato",
-    // });
   };
 
   const handleCleanSearch = () => setSearchTerm("");
@@ -86,7 +63,7 @@ export default function useProductsView() {
     if (!prodSelected) return;
 
     customeAlert({
-      title: "¿Desea agregar al carrito?",
+      title: "¿Desea agregar al pedido?",
       icon: "warning",
       cancelButtonColor: "#cf2d2d",
       confirmButtonColor: "#3e9b4b",
@@ -103,16 +80,35 @@ export default function useProductsView() {
             ),
           );
           customeAlert({
-            title: "Producto agregado al carrito",
+            title: "Producto agregado al pedido",
+            text: "¿Desea terminar el pedido?",
             icon: "success",
             confirmButtonColor: "#3e9b4b",
+            showCancelButton: true,
+
+            confirmButtonText: "Terminar Pedido",
+            cancelButtonText: "Continuar",
+            cancelButtonColor: "#ff8904",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              openDrawer();
+            }
           });
         } else {
           setCart([...cart, { ...prodSelected, cantidad: 1 }]);
           customeAlert({
-            title: "Producto agregado al carrito",
+            title: "Producto agregado al pedido",
+            text: "¿Desea terminar el pedido?",
             icon: "success",
             confirmButtonColor: "#3e9b4b",
+            showCancelButton: true,
+            confirmButtonText: "Terminar Pedido",
+            cancelButtonText: "Continuar",
+            cancelButtonColor: "#ff8904",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              openDrawer();
+            }
           });
         }
         handleCloseModal();
