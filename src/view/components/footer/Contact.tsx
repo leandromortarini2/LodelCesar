@@ -14,7 +14,7 @@ export default function Contact() {
         </span>
         <span className="flex justify-center items-center gap-2 ">
           <FaMapMarkerAlt className="text-xl" />
-          Banfield, Lomas de Zamora
+          Banfield, Centenario
         </span>
       </div>
 

@@ -12,7 +12,7 @@ export default function useLogicLanding() {
   const cart = useLandingStore((state) => state.cart);
   const setCart = useLandingStore((state) => state.setCart);
 
-  const whatsappNumber = "5491165149673";
+  const whatsappNumber = "5491122883245";
   const message = encodeURIComponent(
     "¡Hola! Me gustaría consultar cuál es el plato del día de hoy.",
   );
@@ -132,7 +132,7 @@ export default function useLogicLanding() {
 
     const encodedMessage = encodeURIComponent(message);
 
-    const phoneNumber = "5491165149673";
+    const phoneNumber = "5491122883245";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     customeAlert({
