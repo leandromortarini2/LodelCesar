@@ -18,7 +18,7 @@ export const categories: Category[] = [
   },
   {
     id: "pollo-grille",
-    label: "Pollo al Grill",
+    label: "Pollo Grille",
     img: "https://i.imgur.com/aeCF6rx.jpeg",
   },
   {
@@ -26,11 +26,11 @@ export const categories: Category[] = [
     label: "Choripanes",
     img: "https://i.imgur.com/YxiBM9h.jpeg",
   },
-  {
-    id: "patynesa",
-    label: "Patynesas",
-    img: "https://i.imgur.com/QC2EVM4.jpeg",
-  },
+  // {
+  //   id: "patynesa",
+  //   label: "Patynesas",
+  //   img: "https://i.imgur.com/QC2EVM4.jpeg",
+  // },
   {
     id: "empanadas",
     label: "Empanadas",
