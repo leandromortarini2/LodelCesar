@@ -3,22 +3,20 @@ import { products } from "../../../../../mocks/products";
 import CardProd from "../../../components/CardProd";
 import { Element } from "react-scroll";
 import CategoryCard from "../../../components/CategoryCard";
-import useProductsView from "./hooks/useProductsView";
 import { Modal } from "../../../../app/components/Modal";
 import CustomeButton from "../../../../components/CustomeButton";
 import { IoCart } from "react-icons/io5";
 import type { Product } from "./types";
 
-export default function Products() {
-  const {
-    openModalProd,
-    categorySelected,
-    handleOpenModal,
-    handleCloseModal,
-    prodSelected,
-    handleSelectProd,
-    handleAddToCart,
-  } = useProductsView();
+export default function Products({
+  openModalProd,
+  categorySelected,
+  handleCloseModal,
+  handleOpenModal,
+  prodSelected,
+  handleSelectProd,
+  handleAddToCart,
+}: any) {
   return (
     <Element name="intro-1" className="flex flex-col gap-6 py-10 md:pt-0">
       <div className="w-full gap-4 flex flex-col p-2">

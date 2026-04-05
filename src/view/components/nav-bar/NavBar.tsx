@@ -17,17 +17,23 @@ interface Props {
   closeModal: () => void;
   isOpen: boolean;
   handleRedirectSocial?: any;
+  searchTerm?: string | any;
+  setSearchTerm?: any;
+  handleSearch?: any;
+  handleCleanSearch?: any;
 }
 
 export default function NavBar({
-  handleDrawer,
   routes,
   routesSocial,
   scroll,
   openModal,
-  closeModal,
-  isOpen,
   handleRedirectSocial,
+  searchTerm,
+  setSearchTerm,
+  handleSearch,
+  handleCleanSearch,
+  handleDrawer,
 }: Props) {
   const {
     isOpen: isOpenBurger,
@@ -73,8 +79,10 @@ export default function NavBar({
       </section>
       <InfoBar
         handleDrawer={handleDrawer}
-        closeModal={closeModal}
-        isOpen={isOpen}
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        handleSearch={handleSearch}
+        handleCleanSearch={handleCleanSearch}
       />
     </div>
   );

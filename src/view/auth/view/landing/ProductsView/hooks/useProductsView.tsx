@@ -1,7 +1,10 @@
-import { useState } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useState, useCallback } from "react";
 import type { Category, Product } from "../types";
 import useLandingStore from "../../../../store/storeLanding";
 import customeAlert from "../../../../../../utils/customeAlert";
+import { categories } from "../../../../../../mocks/categories";
+import { scroller } from "react-scroll";
 
 export default function useProductsView() {
   const cart = useLandingStore((state) => state.cart);
@@ -12,23 +15,71 @@ export default function useProductsView() {
     null,
   );
   const [prodSelected, setProdSelected] = useState<Product | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
-  function handleOpenModal({ label, id }: Category) {
+  const redirectProducts = () => {
+    scroller.scrollTo("intro-1", {
+      duration: 800,
+      smooth: "easeInOutQuart",
+      offset: -100,
+    });
+  };
+
+  const handleOpenModal = useCallback(({ label, id }: Category) => {
     setCategorySelected({ label, id });
     setOpenModalProd(true);
-  }
+  }, []);
 
-  function handleCloseModal() {
+  const handleCloseModal = useCallback(() => {
     setProdSelected(null);
     setOpenModalProd(false);
-  }
+  }, []);
+
+  const handleSearch = () => {
+    if (!searchTerm.trim()) return;
+    const term = searchTerm.toLowerCase().trim();
+
+    const foundCategory = categories.find(
+      (cat) =>
+        cat.label.toLowerCase().includes(term) ||
+        cat.id.toLowerCase().includes(term),
+    );
+
+    if (foundCategory) {
+      redirectProducts();
+      setCategorySelected(foundCategory);
+      handleOpenModal(foundCategory);
+      return;
+    }
+
+    // const foundProduct = products.find((prod) =>
+    //   prod.nombre.toLowerCase().includes(term),
+    // );
+
+    // if (foundProduct) {
+    //   const parentCategory = categories.find(
+    //     (cat) => cat.id === foundProduct.categoria,
+    //   );
+    //   if (parentCategory) {
+    //     setCategorySelected(parentCategory);
+    //     setProdSelected(foundProduct);
+    //     setOpenModalProd(true);
+    //     redirectProducts();
+    //   }
+    //   return;
+    // }
+
+    // customeAlert({
+    //   title: "Sin resultados",
+    //   icon: "info",
+    //   text: "Intenta con otro plato",
+    // });
+  };
+
+  const handleCleanSearch = () => setSearchTerm("");
 
   function handleSelectProd(prod: Product) {
-    if (prodSelected?.id === prod.id) {
-      setProdSelected(null);
-    } else {
-      setProdSelected(prod);
-    }
+    setProdSelected((prev) => (prev?.id === prod.id ? null : prod));
   }
 
   function handleAddToCart() {
@@ -43,25 +94,18 @@ export default function useProductsView() {
     }).then((result) => {
       if (result.isConfirmed) {
         const existingProd = cart.find((item) => item.id === prodSelected.id);
-
         if (existingProd) {
-          const updatedCart = cart.map((item) =>
-            item.id === prodSelected.id
-              ? { ...item, cantidad: (item.cantidad || 1) + 1 }
-              : item,
+          setCart(
+            cart.map((item) =>
+              item.id === prodSelected.id
+                ? { ...item, cantidad: (item.cantidad || 1) + 1 }
+                : item,
+            ),
           );
-          setCart(updatedCart);
         } else {
           setCart([...cart, { ...prodSelected, cantidad: 1 }]);
         }
-
         handleCloseModal();
-        customeAlert({
-          title: "Producto agregado al carrito",
-          icon: "success",
-          confirmButtonColor: "#3e9b4b",
-          confirmButtonText: "Aceptar",
-        });
       }
     });
   }
@@ -74,8 +118,10 @@ export default function useProductsView() {
     prodSelected,
     setProdSelected,
     handleSelectProd,
-    cart,
-    setCart,
     handleAddToCart,
+    searchTerm,
+    setSearchTerm,
+    handleSearch,
+    handleCleanSearch,
   };
 }
