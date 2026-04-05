@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Contact from "./Contact";
 import EmpresasIcons from "./CompanyIcons";
 
