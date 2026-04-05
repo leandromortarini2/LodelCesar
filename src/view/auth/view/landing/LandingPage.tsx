@@ -12,7 +12,7 @@ import useProductsView from "./ProductsView/hooks/useProductsView";
 
 export default function LandingPage() {
   const {
-    handleClose,
+    handleDrawer,
     handleSubmitCart,
     isOpen,
     method,
@@ -25,15 +25,15 @@ export default function LandingPage() {
     redirectProducts,
   } = useLogicLanding();
 
-  const productsLogic = useProductsView();
+  const productsLogic = useProductsView({ openDrawer: handleDrawer });
   return (
     <div>
       <FormProvider {...method}>
         <NavBar
-          openModal={handleClose}
-          closeModal={handleClose}
+          openModal={handleDrawer}
+          closeModal={handleDrawer}
           isOpen={isOpen}
-          handleDrawer={handleClose}
+          handleDrawer={handleDrawer}
           routes={routesLanding}
           routesSocial={social}
           scroll={true}
@@ -59,7 +59,7 @@ export default function LandingPage() {
           updateQuantity={updateQuantity}
           totalCart={totalCart}
           onDeleteProdCart={onDeleteProdCart}
-          handleClose={handleClose}
+          handleClose={handleDrawer}
         />
       </FormProvider>
     </div>

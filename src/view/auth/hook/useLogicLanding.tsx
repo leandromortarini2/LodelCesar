@@ -31,7 +31,7 @@ export default function useLogicLanding() {
     reValidateMode: "onChange",
   });
 
-  function handleClose() {
+  function handleDrawer() {
     setIsOpen(!isOpen);
   }
 
@@ -70,7 +70,7 @@ export default function useLogicLanding() {
 
   function onDeleteProdCart(id: number) {
     customeAlert({
-      title: "¿Desea eliminar el producto del carrito?",
+      title: "¿Desea eliminar el producto del pedido?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#32B16E",
@@ -81,6 +81,12 @@ export default function useLogicLanding() {
       if (result.isConfirmed) {
         const updatedCart = cart.filter((item) => item.id !== id);
         setCart(updatedCart);
+        customeAlert({
+          title: "Producto eliminado del pedido",
+          icon: "success",
+          confirmButtonColor: "#32B16E",
+          confirmButtonText: "Aceptar",
+        });
       }
     });
   }
@@ -127,7 +133,7 @@ export default function useLogicLanding() {
 
   return {
     handleSubmitCart,
-    handleClose,
+    handleDrawer,
     isOpen,
     method,
     handleRedirectSocial,

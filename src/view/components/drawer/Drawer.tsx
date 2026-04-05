@@ -64,7 +64,7 @@ export const Drawer = ({
                 ))
               ) : (
                 <p className="text-center text-gray-500 mt-10">
-                  Tu carrito está vacío
+                  Tu pedido está vacío
                 </p>
               )}
             </div>

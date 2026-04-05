@@ -40,7 +40,7 @@ const CustomeButton = ({
   colorText,
 }: props) => {
   const disabledStyles =
-    "bg-gray-primary opacity-75 cursor-not-allowed pointer-events-none border-gray-primary";
+    "bg-gray-primary  cursor-not-allowed pointer-events-none border-gray-primary";
 
   return (
     <div className={` ${containerClass} flex gap-10`}>
