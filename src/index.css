@@ -3,9 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 
 @theme {
-  --color-colorUno: #f2dbb4;
+  --color-colorUno: #fdc700;
   --color-colorDos: #ffeebc;
   --color-colorTres: #9d6c44;
+  --color-colorCuatro: #ff8904;
   --color-cuartity: #ed9900;
   --color-quintity: #a48164;
   --color-default-text: #333333;

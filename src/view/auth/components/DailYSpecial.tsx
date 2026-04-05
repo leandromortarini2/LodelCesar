@@ -7,7 +7,7 @@ export default function DailySpecial({
   handleConsult: () => void;
 }) {
   return (
-    <section className="w-full py-12 px-4 bg-white-secondary  py-10 ">
+    <section className="w-full py-12 px-4 bg-white-secondary   ">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4 relative">
           <div className="overflow-hidden rounded-2xl shadow-xl rotate-[-3deg] hover:rotate-0 transition-transform duration-500">
@@ -24,7 +24,7 @@ export default function DailySpecial({
               className="w-full h-64 object-cover"
             />
           </div>
-          <div className="absolute -top-4 -right-2 bg-yellow-400 text-colorTres font-black px-4 py-2 rounded-full shadow-lg text-sm uppercase tracking-wider">
+          <div className="absolute -top-4 -right-2 bg-colorUno text-colorTres font-black px-4 py-2 rounded-full shadow-lg text-sm uppercase tracking-wider">
             ¡Nuevo Hoy!
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function DailySpecial({
         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-colorTres leading-tight">
             ¿No sabes qué elegir? <br />
-            <span className="text-orange-400">Consulta el Plato del Día</span>
+            <span className="text-colorCuatro">Consulta el Plato del Día</span>
           </h2>
 
           <p className="text-gray-600 text-lg">
