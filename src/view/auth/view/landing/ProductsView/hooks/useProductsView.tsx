@@ -50,6 +50,13 @@ export default function useProductsView({ openDrawer }: { openDrawer: any }) {
       setCategorySelected(foundCategory);
       handleOpenModal(foundCategory);
       return;
+    } else {
+      customeAlert({
+        title: "No se encontraron resultados",
+        icon: "warning",
+        confirmButtonColor: "#3e9b4b",
+        showCancelButton: false,
+      });
     }
   };
 
