@@ -102,8 +102,18 @@ export default function useProductsView() {
                 : item,
             ),
           );
+          customeAlert({
+            title: "Producto agregado al carrito",
+            icon: "success",
+            confirmButtonColor: "#3e9b4b",
+          });
         } else {
           setCart([...cart, { ...prodSelected, cantidad: 1 }]);
+          customeAlert({
+            title: "Producto agregado al carrito",
+            icon: "success",
+            confirmButtonColor: "#3e9b4b",
+          });
         }
         handleCloseModal();
       }

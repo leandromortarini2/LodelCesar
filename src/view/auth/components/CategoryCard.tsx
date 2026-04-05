@@ -1,7 +1,6 @@
 import type { CategoryProps } from "../view/landing/ProductsView/types";
 
 export default function CategoryCard({ categoria, onClick }: CategoryProps) {
-  //   const { label, icon } = categoria;
   const { label, id, img } = categoria;
 
   return (
@@ -11,7 +10,7 @@ export default function CategoryCard({ categoria, onClick }: CategoryProps) {
         onClick={() => onClick({ label, id })}
       >
         <img src={img} alt="" className="rounded-t-2xl h-24 w-full " />
-        <div className="p-6">
+        <div className="p-2">
           <h3 className="text-sm font-bold uppercase tracking-wider text-center">
             {label}
           </h3>

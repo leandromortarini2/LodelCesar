@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import CartButton from "./LoginButton";
 import Search from "../../app/components/Search";
 
@@ -15,7 +16,7 @@ export default function InfoBar({
   handleCleanSearch: any;
 }) {
   return (
-    <section className="w-full h-14 bg-colorUno flex justify-between items-center px-3 text-white text-xs ">
+    <section className="w-full h-12 bg-colorUno flex justify-between items-center px-3 text-white text-xs ">
       <Search
         inputName={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}

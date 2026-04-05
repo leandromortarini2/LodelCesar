@@ -36,7 +36,7 @@ export default function Search({
         ref={inputRef}
         type="search"
         name="search"
-        className={`focus:outline-none w-[250px] h-10 border bg-white text-default-text border-gray-secondary p-2 rounded placeholder:text-gray-primary disabled:bg-gray-200`}
+        className={`focus:outline-none w-[250px] h-9 border bg-white text-default-text border-gray-secondary p-2 rounded placeholder:text-gray-primary disabled:bg-gray-200`}
         placeholder={placeholder || "Buscar..."}
         onChange={onChange}
         value={inputName}
@@ -44,7 +44,7 @@ export default function Search({
       />
       <CustomeButton
         claseButton="secondary"
-        height="h-10"
+        height="h-9"
         onClick={handleOnSearch}
         Icon={IoMdSearch}
         color="text-colorTres"

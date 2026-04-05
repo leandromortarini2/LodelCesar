@@ -43,8 +43,8 @@ export default function NavBar({
 
   return (
     <div className="sticky top-0 w-full  z-50">
-      <section className="w-full h-16 bg-colorTres flex justify-between items-center border-gray-secondary  px-3  2xl:px-10 ">
-        <div className="w-14 h-12 lg:w-[15%]  flex justify-start">
+      <section className="w-full h-12 bg-colorTres flex justify-between items-center border-gray-secondary  px-3  2xl:px-10 ">
+        <div className="w-12 h-10 lg:w-[15%]  flex justify-start">
           <Logo />
         </div>
 
