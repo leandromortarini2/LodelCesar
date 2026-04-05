@@ -18,7 +18,23 @@ export default function useLogicLanding() {
   );
 
   const handleConsult = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+    customeAlert({
+      title: "Vas a ser redirigido a WhatsApp",
+      text: "¿Deseas continuar?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#32B16E",
+      cancelButtonColor: "#ef4444",
+      confirmButtonText: "Si",
+      cancelButtonText: "No",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open(
+          `https://wa.me/${whatsappNumber}?text=${message}`,
+          "_blank",
+        );
+      }
+    });
   };
 
   const method = useForm({
@@ -119,7 +135,20 @@ export default function useLogicLanding() {
     const phoneNumber = "5491165149673";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-    window.open(whatsappUrl, "_blank");
+    customeAlert({
+      title: "Vas a ser redirigido a WhatsApp",
+      text: "¿Deseas continuar?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#32B16E",
+      cancelButtonColor: "#ef4444",
+      confirmButtonText: "Si",
+      cancelButtonText: "No",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open(whatsappUrl, "_blank");
+      }
+    });
   }
 
   function redirectProducts() {
