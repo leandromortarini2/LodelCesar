@@ -21,7 +21,7 @@ export default function Products({
   return (
     <Element
       name="intro-1"
-      className="flex flex-col gap-6 py-10 md:pt-0 bg-background"
+      className="flex flex-col gap-6 py-10 px-4 md:pt-0 bg-background"
     >
       <div className="w-full gap-4 flex flex-col p-2">
         <h1 className="text-2xl lg:text-3xl font-semibold text-colorTres lg:text-left">
@@ -46,7 +46,7 @@ export default function Products({
             colorBg="bg-[#f9f9f9]"
             title={categorySelected?.label || ""}
           >
-            <div className="grid grid-cols-2 lg:grid-cols-4 relative  overflow-y-auto max-h-144 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 w-full  overflow-y-auto  gap-4">
               {products.map(
                 (item, index) =>
                   item.categoria === categorySelected?.id && (
