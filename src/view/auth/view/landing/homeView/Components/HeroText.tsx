@@ -21,7 +21,7 @@ export default function HeroText({ redirectProducts, handleConsult }: Props) {
         </div>
 
         <p className="text-sm md:text-base lg:text-base 2xl:text-lg tracking-wider pr-3">
-          <span className="font-semibold">
+          <span className="font-semibold text-colorCuatro">
             ¡Anímate a probar lo mejor de nuestra cocina!
           </span>
           <br />
@@ -42,11 +42,11 @@ export default function HeroText({ redirectProducts, handleConsult }: Props) {
           />
           <Button
             text="Consultar Plato del Día"
-            claseButton="secondary"
+            claseButton="primary"
             border
             Icon={FaWhatsapp}
             positionIcon="right"
-            color="text-btn-wp"
+            color="bg-btn-wp"
             borderColor="border-btn-wp"
             onClick={handleConsult}
           />
