@@ -1,18 +1,20 @@
-export default function EmpresasIcons() {
-  const empresas = [
-    "/logos/empresas/1.png",
-    "/logos/empresas/2.png",
-    "/logos/empresas/3.png",
-    "/logos/empresas/4.png",
-    "/logos/empresas/5.png",
-    "/logos/empresas/6.png",
-  ];
+import { social } from "../../../utils/routesNavBar";
 
+export default function EmpresasIcons({ handleRedirectSocial }: any) {
   return (
-    <div className="w-[80%] h-16 bg-[#1E1E1E]/20 rounded-2xl flex justify-between items-center px-5">
-      {empresas.map((empresa, index) => (
-        <img key={index} src={empresa} alt="" className="h-4 md:h-8 lg:h-10" />
-      ))}
+    <div className="w-[80%] h-16 gap-5 flex justify-center items-center px-5">
+      {social?.map((route, i) => {
+        const Icon = route.icon;
+        return (
+          <div
+            key={i}
+            onClick={() => handleRedirectSocial(route)}
+            className="hover:cursor-pointer"
+          >
+            <Icon className={`w-7 lg:w-8 h-7 lg:h-8 ${route.colorIcon}`} />
+          </div>
+        );
+      })}
     </div>
   );
 }

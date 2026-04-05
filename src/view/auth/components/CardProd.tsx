@@ -13,7 +13,7 @@ export default function CardProd({
   const { nombre, descripcion, precio, id } = producto;
   return (
     <div
-      className={`card bg-base-100 flex-1  h-48 ${prodSelected?.id === id ? "border-success border-2" : "border border-gray-200"} `}
+      className={`card bg-base-100 flex-1  h-48 ${prodSelected?.id === id ? "border-btn-wp border-2" : "border border-gray-200"} `}
       onClick={() => onClick(producto)}
     >
       <div className="card-body ">

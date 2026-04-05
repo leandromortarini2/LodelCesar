@@ -88,8 +88,8 @@ export const Drawer = ({
                 height="h-12"
                 sizeText="text-base font-semibold"
                 disabled={cart.length === 0}
-                color="bg-success"
-                hover="hover:bg-success/90"
+                color="bg-btn-wp"
+                hover="hover:bg-btn-wp/90"
               />
             </div>
           </div>

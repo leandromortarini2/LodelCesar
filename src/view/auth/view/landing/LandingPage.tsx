@@ -7,6 +7,7 @@ import { routesLanding, social } from "../../../../utils/routesNavBar";
 import { FormProvider } from "react-hook-form";
 import useLogicLanding from "../../hook/useLogicLanding";
 import Products from "./ProductsView/Products";
+import DailySpecial from "../../components/DailYSpecial";
 
 export default function LandingPage() {
   const {
@@ -19,6 +20,8 @@ export default function LandingPage() {
     updateQuantity,
     totalCart,
     onDeleteProdCart,
+    handleConsult,
+    redirectProducts,
   } = useLogicLanding();
 
   return (
@@ -34,11 +37,15 @@ export default function LandingPage() {
           scroll={true}
           handleRedirectSocial={handleRedirectSocial}
         />
-        <Home handleDrawer={handleClose} />
+        <Home
+          redirectProducts={redirectProducts}
+          handleConsult={handleConsult}
+        />
         {/* <InfoBar /> */}
         {/* <Products handleDrawer={handleDrawer} /> */}
+        <DailySpecial handleConsult={handleConsult} />
         <Products />
-        <Footer />
+        <Footer handleRedirectSocial={handleRedirectSocial} />
         <Drawer
           onSubmit={handleSubmitCart}
           open={isOpen}

@@ -17,6 +17,7 @@ interface props {
   sizeText?: string;
   containerClass?: string;
   colorBg?: string;
+  colorText?: string;
 }
 
 const CustomeButton = ({
@@ -36,6 +37,7 @@ const CustomeButton = ({
   borderColor,
   containerClass,
   colorBg,
+  colorText,
 }: props) => {
   const disabledStyles =
     "bg-gray-primary opacity-75 cursor-not-allowed pointer-events-none border-gray-primary";
@@ -48,7 +50,7 @@ const CustomeButton = ({
           type={type ?? "button"}
           onClick={onclick}
           className={`
-            justify-center items-center text-white text-bold py-2 px-3 flex gap-2 rounded text-center font-semibold
+            justify-center items-center ${colorText ? colorText : "text-white"}  text-bold py-2 px-3 flex gap-2 rounded text-center font-semibold
             ${sizeText ? sizeText : "text-xs"}
             ${positionIcon === "left" ? "" : "flex-row-reverse"}
             ${width} ${height}
@@ -71,7 +73,7 @@ const CustomeButton = ({
           disabled={disabled}
           onClick={onclick}
           className={`
-            text-white py-2 px-3 rounded text-center flex justify-center items-center font-semibold
+            ${colorText ? colorText : "text-white"} py-2 px-3 rounded text-center flex justify-center items-center font-semibold
             ${sizeText ? sizeText : "text-xs"}
             ${width} ${height}
             ${

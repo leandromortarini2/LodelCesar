@@ -4,12 +4,22 @@ import { useForm } from "react-hook-form";
 import customeAlert from "../../../utils/customeAlert";
 import useLandingStore from "../store/storeLanding";
 import type { RoutesNavBar } from "../../../interfaces/RoutesNavBar";
+import { scroller } from "react-scroll";
 
 export default function useLogicLanding() {
   const [isOpen, setIsOpen] = useState(false);
 
   const cart = useLandingStore((state) => state.cart);
   const setCart = useLandingStore((state) => state.setCart);
+
+  const whatsappNumber = "5491165149673";
+  const message = encodeURIComponent(
+    "¡Hola! Me gustaría consultar cuál es el plato del día de hoy.",
+  );
+
+  const handleConsult = () => {
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+  };
 
   const method = useForm({
     defaultValues: {
@@ -106,6 +116,15 @@ export default function useLogicLanding() {
     window.open(whatsappUrl, "_blank");
   }
 
+  function redirectProducts() {
+    scroller.scrollTo("intro-1", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -100,
+    });
+  }
+
   return {
     handleSubmitCart,
     handleClose,
@@ -117,5 +136,7 @@ export default function useLogicLanding() {
     updateQuantity,
     totalCart,
     onDeleteProdCart,
+    handleConsult,
+    redirectProducts,
   };
 }
