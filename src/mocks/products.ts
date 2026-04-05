@@ -126,7 +126,7 @@ export const products = [
   {
     id: 16,
     nombre: "Choripan",
-    descripcion: "Choripan",
+    descripcion: "",
     precio: "4000",
     img: "https://i.imgur.com/YxiBM9h.jpeg",
     categoria: "choripan",
@@ -134,7 +134,7 @@ export const products = [
   {
     id: 17,
     nombre: "Choripan con Papas",
-    descripcion: "Choripan con Papas",
+    descripcion: "",
     precio: "5500",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "choripan",
@@ -391,7 +391,7 @@ export const products = [
   {
     id: 48,
     nombre: "Sang. Mila + Papas chicas",
-    descripcion: "Milanesa de pollo, lechuga y tomate",
+    descripcion: "Pollo, lechuga y tomate",
     precio: "6000",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "Promos",
@@ -399,7 +399,7 @@ export const products = [
   {
     id: 49,
     nombre: "Sang. Mila + Papas chicas",
-    descripcion: "Milanesa de carne, lechuga y tomate",
+    descripcion: "Carne, lechuga y tomate",
     precio: "8000",
     img: "https://i.imgur.com/nqZGAjX.jpeg",
     categoria: "Promos",
@@ -407,7 +407,7 @@ export const products = [
   {
     id: 50,
     nombre: "Patynesa + Papas chicas",
-    descripcion: "Patynesa, lechuga y tomate",
+    descripcion: "Lechuga y tomate",
     precio: "6000",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "Promos",
@@ -423,7 +423,7 @@ export const products = [
   {
     id: 52,
     nombre: "Hamburguesa + Papas chicas",
-    descripcion: "Hamburguesa, lechuga y tomate",
+    descripcion: "Lechuga y tomate",
     precio: "6000",
     img: "https://i.imgur.com/3EQ1rrx.jpeg",
     categoria: "Promos",
@@ -431,7 +431,7 @@ export const products = [
   {
     id: 53,
     nombre: "Bondiola + Papas chicas",
-    descripcion: "Sanguche de bondiola, lechuga y tomate",
+    descripcion: "Lechuga y tomate",
     precio: "8000",
     img: "https://i.imgur.com/aHFTmhs.jpeg",
     categoria: "Promos",
