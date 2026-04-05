@@ -4,9 +4,10 @@ import HeroImg from "./HeroImg";
 import { FaWhatsapp } from "react-icons/fa6";
 
 interface Props {
-  handleDrawer: () => void;
+  redirectProducts: () => void;
+  handleConsult: () => void;
 }
-export default function HeroText({ handleDrawer }: Props) {
+export default function HeroText({ redirectProducts, handleConsult }: Props) {
   return (
     <div className="px-4  lg:px-0 lg:w-1/2  items-center h-full  flex  md:justify-center lg:justify-end">
       <div className=" md:w-3/4 2xl:w-3/5 space-y-10 md:space-y-8">
@@ -27,14 +28,17 @@ export default function HeroText({ handleDrawer }: Props) {
           Disfruta de un menú variado con pizzas, empanadas, sándwiches de
           milanesa y hamburguesas, además de nuestros platos especiales del día.
         </p>
-        <div className="w-full flex justify-between md:justify-start gap-3">
+        <div className="w-full flex justify-between md:justify-start gap-2">
           <Button
-            onClick={handleDrawer}
+            onClick={redirectProducts}
             text="Ver Comidas"
             claseButton="primary"
             Icon={IoIosArrowForward}
             positionIcon="right"
-            color="bg-colorTres"
+            color="bg-yellow-400"
+            colorText="text-colorTres"
+            hover="hover:bg-yellow-400/80"
+            sizeText="text-sm"
           />
           <Button
             text="Consultar Plato del Día"
@@ -42,8 +46,9 @@ export default function HeroText({ handleDrawer }: Props) {
             border
             Icon={FaWhatsapp}
             positionIcon="right"
-            color="text-colorTres"
-            borderColor="border-colorTres"
+            color="text-btn-wp"
+            borderColor="border-btn-wp"
+            onClick={handleConsult}
           />
         </div>
       </div>

@@ -1,15 +1,24 @@
 import { create } from "zustand";
+import type { ProductCart } from "../view/landing/ProductsView/types";
 
 const useLandingStore = create<{
   openModal: boolean;
   setOpenModal: (openModal: boolean) => void;
+
   disabled: boolean;
   setDisabled: (disabled: boolean) => void;
+
+  cart: ProductCart[];
+  setCart: (cart: ProductCart[]) => void;
 }>()((set) => ({
   openModal: false,
   setOpenModal: (openModal: boolean) => set({ openModal }),
+
   disabled: true,
   setDisabled: (disabled: boolean) => set({ disabled }),
+
+  cart: [],
+  setCart: (cart: ProductCart[]) => set({ cart }),
 }));
 
 export default useLandingStore;

@@ -28,7 +28,6 @@ export default function DropzoneComponent({
 
   function handleDrop(acceptedFiles: File[]) {
     const uploaded = acceptedFiles[0];
-    console.log("seleccion de archivo:", uploaded);
     setState(uploaded);
   }
 

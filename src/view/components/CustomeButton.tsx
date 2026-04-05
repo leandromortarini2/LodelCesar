@@ -15,6 +15,9 @@ interface props {
   type?: "button" | "reset" | "submit";
   disabled?: boolean;
   sizeText?: string;
+  containerClass?: string;
+  colorBg?: string;
+  colorText?: string;
 }
 
 const CustomeButton = ({
@@ -32,19 +35,22 @@ const CustomeButton = ({
   disabled,
   sizeText,
   borderColor,
+  containerClass,
+  colorBg,
+  colorText,
 }: props) => {
   const disabledStyles =
     "bg-gray-primary opacity-75 cursor-not-allowed pointer-events-none border-gray-primary";
 
   return (
-    <div className="flex gap-10">
+    <div className={` ${containerClass} flex gap-10`}>
       {claseButton === "primary" && Icon && (
         <button
           disabled={disabled}
           type={type ?? "button"}
           onClick={onclick}
           className={`
-            justify-center items-center text-white text-bold py-2 px-3 flex gap-2 rounded text-center font-semibold
+            justify-center items-center ${colorText ? colorText : "text-white"}  text-bold py-2 px-3 flex gap-2 rounded text-center font-semibold
             ${sizeText ? sizeText : "text-xs"}
             ${positionIcon === "left" ? "" : "flex-row-reverse"}
             ${width} ${height}
@@ -67,7 +73,7 @@ const CustomeButton = ({
           disabled={disabled}
           onClick={onclick}
           className={`
-            text-white py-2 px-3 rounded text-center flex justify-center items-center font-semibold
+            ${colorText ? colorText : "text-white"} py-2 px-3 rounded text-center flex justify-center items-center font-semibold
             ${sizeText ? sizeText : "text-xs"}
             ${width} ${height}
             ${
@@ -89,7 +95,7 @@ const CustomeButton = ({
           type={type}
           onClick={onclick}
           className={`
-            py-2 px-3 rounded text-center flex items-center justify-center gap-2 font-semibold bg-white
+            py-2 px-3 rounded text-center flex items-center justify-center gap-2 font-semibold ${colorBg ? colorBg : "bg-white"} 
             ${sizeText ? sizeText : "text-xs"}
             ${positionIcon === "left" ? "" : "flex-row-reverse"}
             ${width} ${height}
@@ -122,7 +128,7 @@ const CustomeButton = ({
             ${
               disabled
                 ? `${disabledStyles} text-white`
-                : `bg-white cursor-pointer ${color ? color : "text-primary"} ${
+                : ` ${colorBg ? colorBg : "bg-white"}  cursor-pointer ${color ? color : "text-primary"} ${
                     hover ? hover : "hover:bg-white-secondary"
                   } ${
                     border

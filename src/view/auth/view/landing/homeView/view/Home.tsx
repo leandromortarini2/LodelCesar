@@ -3,14 +3,18 @@ import HeroText from "../Components/HeroText";
 import HeroImg from "../Components/HeroImg";
 
 interface Props {
-  handleDrawer: () => void;
+  redirectProducts: () => void;
+  handleConsult: () => void;
 }
 
-export default function Home({ handleDrawer }: Props) {
+export default function Home({ redirectProducts, handleConsult }: Props) {
   return (
     <Element name="inicio">
       <section className=" bg-white bg-cover bg-blend-darken flex-1 lg:h-[630px] 2xl:h-[800px] w-full flex flex-col lg:flex-row items-center justify-center  py-20 lg:py-0">
-        <HeroText handleDrawer={handleDrawer} />
+        <HeroText
+          redirectProducts={redirectProducts}
+          handleConsult={handleConsult}
+        />
         <div className="hidden lg:block">
           <HeroImg />
         </div>

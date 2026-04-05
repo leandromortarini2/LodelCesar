@@ -11,6 +11,7 @@ interface SearchProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   inputName: string;
   buttonClean?: boolean;
+  placeholder?: string;
 }
 
 export default function Search({
@@ -21,6 +22,7 @@ export default function Search({
   onChange,
   inputName,
   buttonClean,
+  placeholder,
 }: SearchProps) {
   useEffect(() => {
     if (inputRef?.current) {
@@ -34,8 +36,8 @@ export default function Search({
         ref={inputRef}
         type="search"
         name="search"
-        className={`focus:outline-none w-[250px] h-10 border bg-white border-gray-secondary p-2 rounded placeholder:text-gray-primary disabled:bg-gray-200`}
-        placeholder="Buscar..."
+        className={`focus:outline-none w-[250px] h-10 border bg-white text-default-text border-gray-secondary p-2 rounded placeholder:text-gray-primary disabled:bg-gray-200`}
+        placeholder={placeholder || "Buscar..."}
         onChange={onChange}
         value={inputName}
         onKeyDown={(e) => e.key === "Enter" && handleOnSearch()}

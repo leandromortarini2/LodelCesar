@@ -17,3 +17,13 @@ export interface Product {
   categoria: string;
   id: number;
 }
+
+export interface ProductCart {
+  nombre: string;
+  descripcion: string;
+  precio: string;
+  img: string;
+  categoria: string;
+  id: number;
+  cantidad: number;
+}

@@ -26,7 +26,6 @@ export default function DashboardView() {
 
   const onFormSubmit = (data: ICalculateCuil) => {
     const cuilGererado = calculateCUIL(data.dni, data.gender);
-    console.log("CUIL en Dashboard:", cuilGererado);
 
     setStatus("C");
     openModal();

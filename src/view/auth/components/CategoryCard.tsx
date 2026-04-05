@@ -7,7 +7,7 @@ export default function CategoryCard({ categoria, onClick }: CategoryProps) {
   return (
     <div className="group cursor-pointer">
       <div
-        className="flex flex-col items-center justify-center  bg-colorTres/10 rounded-2xl shadow-sm  "
+        className="flex flex-col items-center justify-center  bg-colorTres/10 rounded-2xl shadow-sm  max-w-[200px]"
         onClick={() => onClick({ label, id })}
       >
         <img src={img} alt="" className="rounded-t-2xl h-24 w-full " />

@@ -1,5 +1,4 @@
 import React from "react";
-import { RiCloseCircleLine } from "react-icons/ri";
 import CustomeButton from "../../components/CustomeButton";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
