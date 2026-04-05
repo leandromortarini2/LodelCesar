@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
 import type { RoutesNavBar } from "../../../interfaces/RoutesNavBar";
 import delCesar from "../../../../public/textDelCesar.png";
+import CustomeButton from "../CustomeButton";
+import { IoClose } from "react-icons/io5";
 interface Props {
   routes: RoutesNavBar[];
   routesSocial?: RoutesNavBar[];
@@ -18,10 +20,17 @@ export const Burger = ({
 }: Props) => {
   return (
     <>
-      <div className="h-full flex flex-col justify-between items-center ">
-        <div className="w-full">
-          <div className="flex justify-center items-center h-16 border-b border-gray-secondary">
+      <div className="h-screen  w-full flex flex-col  pb-10 justify-between items-center ">
+        <div className="w-full h-full">
+          <div className="flex justify-between px-4 items-center h-16 border-b border-gray-secondary">
             <img src={delCesar} alt="logo" className="w-28" />
+            <CustomeButton
+              claseButton="secondary"
+              Icon={IoClose}
+              color="text-default-text"
+              colorBg="bg-colorBackground"
+              onClick={closeModalBurger}
+            />
           </div>
           {routes &&
             routes.map((route, i) => {

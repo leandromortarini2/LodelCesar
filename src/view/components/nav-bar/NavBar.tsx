@@ -63,7 +63,7 @@ export default function NavBar({
           )}
           <div className="">
             {isOpenBurger && (
-              <section className="w-full   bg-white-secondary h-[calc(100vh-130px)] absolute top-16 left-0 lg:hidden flex flex-col justify-between overflow-y-auto ">
+              <section className="w-full   bg-white-secondary h-screen absolute top-0 left-0 lg:hidden flex flex-col justify-between overflow-y-auto ">
                 <Burger
                   routes={routes || []}
                   routesSocial={routesSocial}

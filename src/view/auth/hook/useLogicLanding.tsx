@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import customeAlert from "../../../utils/customeAlert";
 import useLandingStore from "../store/storeLanding";
@@ -46,6 +46,18 @@ export default function useLogicLanding() {
     mode: "onChange",
     reValidateMode: "onChange",
   });
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   function handleDrawer() {
     setIsOpen(!isOpen);
