@@ -27,6 +27,7 @@ export default function Products({
         <h1 className="text-2xl lg:text-3xl font-semibold text-colorTres lg:text-left">
           Nuestros Platos
         </h1>
+
         <div className="w-full flex justify-center">
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">
             {categories.map((cat) => (
@@ -46,6 +47,9 @@ export default function Products({
             colorBg="bg-[#f9f9f9]"
             title={categorySelected?.label || ""}
           >
+            <p className="text-colorCuatro font-medium text-sm">
+              Seleccione un plato para agregarlo a su pedido
+            </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 w-full  overflow-y-auto  gap-4">
               {products.map(
                 (item, index) =>
@@ -60,7 +64,7 @@ export default function Products({
               )}
 
               {prodSelected && (
-                <div className="absolute bottom-4 right-0">
+                <div className="absolute bottom-5 right-10">
                   <CustomeButton
                     claseButton="primary"
                     Icon={IoCart}

@@ -32,7 +32,7 @@ export const Modal: React.FC<IPropsModal> = ({
       >
         <div className="flex items-start justify-between w-full ">
           {title && (
-            <h3 className=" text-2xl font-semibold text-center text-primaryBlue">
+            <h3 className=" text-2xl font-semibold text-center text-default-text">
               {title}
             </h3>
           )}
