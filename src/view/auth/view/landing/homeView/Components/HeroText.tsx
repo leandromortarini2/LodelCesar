@@ -15,7 +15,7 @@ export default function HeroText({ redirectProducts, handleConsult }: Props) {
           <HeroImg />
           <div className=" flex flex-col items-center space-y-3 text-center lg:text-start">
             <h2 className="text-2xl md:text-3xl lg:text-2xl font-semibold text-colorTres">
-              Comidas Caceras
+              Comidas Caseras
             </h2>
           </div>
         </div>
