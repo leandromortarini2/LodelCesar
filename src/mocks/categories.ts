@@ -54,6 +54,11 @@ export const categories: Category[] = [
     img: "https://i.imgur.com/KBjcRks.jpeg",
   },
   {
+    id: "Milanesa Napolitana",
+    label: "Milanesa Napolitana",
+    img: "https://i.imgur.com/iZCTTPh.jpeg",
+  },
+  {
     id: "al-plato",
     label: "Al Plato",
     img: "https://i.imgur.com/Cj0YtkB.jpeg",
