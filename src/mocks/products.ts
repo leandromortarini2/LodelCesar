@@ -93,7 +93,7 @@ export const products = [
     id: 12,
     nombre: "Hamburguesa Completa",
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
-    precio: "6500",
+    precio: "7000",
     img: "https://i.imgur.com/NPbaApy.jpeg",
     categoria: "hamburguesas",
   },
