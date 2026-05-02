@@ -24,7 +24,7 @@ export default function CartCard({
       <div className="flex justify-between items-start">
         <div className="flex flex-col">
           <p className="text-sm font-bold text-colorTres">
-            {categoria === "Sanguche de Milanesa" && `${categoria} - `} {nombre}
+            {categoria === "sandwich de Milanesa" && `${categoria} - `} {nombre}
           </p>
           <p className="text-xs text-gray-400 font-medium">${precio} c/u</p>
         </div>

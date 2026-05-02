@@ -1,12 +1,12 @@
 export const products = [
-  //region sanguches
+  //region Sándwichs
   {
     id: 1,
     nombre: "Carne",
     descripcion: "Lechuga y tomate",
     precio: "7000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Milanesa",
+    categoria: "sandwich de Milanesa",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "8000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Milanesa",
+    categoria: "sandwich de Milanesa",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "9500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Milanesa",
+    categoria: "sandwich de Milanesa",
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ export const products = [
     descripcion: "Lechuga y tomate",
     precio: "5000",
     img: "https://i.imgur.com/J9UOzsg.jpeg",
-    categoria: "Sanguche de Milanesa",
+    categoria: "sandwich de Milanesa",
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "6000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Milanesa",
+    categoria: "sandwich de Milanesa",
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "7500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Milanesa",
+    categoria: "sandwich de Milanesa",
   },
   {
     id: 7,
@@ -54,7 +54,7 @@ export const products = [
     descripcion: "Lechuga y tomate",
     precio: "7000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Bondiola",
+    categoria: "sandwich de Bondiola",
   },
   {
     id: 8,
@@ -62,7 +62,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "8000",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Bondiola",
+    categoria: "sandwich de Bondiola",
   },
   {
     id: 9,
@@ -70,7 +70,7 @@ export const products = [
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "9500",
     img: "https://i.imgur.com/mgHFbun.png",
-    categoria: "Sanguche de Bondiola",
+    categoria: "sandwich de Bondiola",
   },
   //region hamburguesas
   {
@@ -414,7 +414,7 @@ export const products = [
   //region promos
   {
     id: 48,
-    nombre: "Sang. Mila + Papas chicas",
+    nombre: "Sándwich Mila + Papas chicas",
     descripcion: "Pollo, lechuga y tomate",
     precio: "6500",
     img: "https://i.imgur.com/mgHFbun.png",
@@ -422,7 +422,7 @@ export const products = [
   },
   {
     id: 49,
-    nombre: "Sang. Mila + Papas chicas",
+    nombre: "Sándwich Mila + Papas chicas",
     descripcion: "Carne, lechuga y tomate",
     precio: "8500",
     img: "https://i.imgur.com/nqZGAjX.jpeg",
@@ -470,7 +470,7 @@ export const products = [
   },
   {
     id: 53,
-    nombre: "Sang. Pollo Grille + Papas chicas",
+    nombre: "Sándwich Pollo Grille + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "7500",
     img: "https://i.imgur.com/aHFTmhs.jpeg",
@@ -487,7 +487,7 @@ export const products = [
   //region Mila Napolitana
   {
     id: 58,
-    nombre: "Sang. Pollo",
+    nombre: "Sándwich Pollo",
     descripcion: "",
     precio: "7000",
     img: "",
@@ -495,7 +495,7 @@ export const products = [
   },
   {
     id: 57,
-    nombre: "Sand. Carne",
+    nombre: "Sándwich Carne",
     descripcion: "",
     precio: "9000",
     img: "",

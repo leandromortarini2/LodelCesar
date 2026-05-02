@@ -53,7 +53,8 @@ export default function Products({
             <div className="grid grid-cols-2 lg:grid-cols-4 w-full  overflow-y-auto  gap-4">
               {products.map(
                 (item, index) =>
-                  item.categoria === categorySelected?.id && (
+                  item.categoria.normalize("NFC") ===
+                    categorySelected?.id?.normalize("NFC") && (
                     <CardProd
                       key={index}
                       producto={item}

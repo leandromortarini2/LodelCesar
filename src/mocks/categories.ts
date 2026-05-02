@@ -2,13 +2,13 @@ import type { Category } from "../view/auth/view/landing/ProductsView/types";
 
 export const categories: Category[] = [
   {
-    id: "Sanguche de Milanesa",
-    label: "Sanguche de Milanesa",
+    id: "sandwich de Milanesa",
+    label: "Sándwich de Milanesa",
     img: "https://i.imgur.com/J9UOzsg.jpeg",
   },
   {
-    id: "Sanguche de Bondiola",
-    label: "Sanguche de Bondiola",
+    id: "sandwich de Bondiola",
+    label: "Sándwich de Bondiola",
     img: "https://i.imgur.com/aHFTmhs.jpeg",
   },
   {
