@@ -16,7 +16,7 @@ export default function InfoBar({
   handleCleanSearch: any;
 }) {
   return (
-    <section className="w-full h-12 bg-colorUno flex justify-between items-center px-3 text-white text-xs ">
+    <section className="w-full h-12 bg-colorUno flex justify-between items-center px-3 text-white text-xs 2xl:px-10">
       <Search
         inputName={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}

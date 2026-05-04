@@ -21,7 +21,10 @@ export default function HeroText({ redirectProducts, handleConsult }: Props) {
         </div>
 
         <p className="text-sm md:text-base lg:text-base 2xl:text-lg tracking-wider pr-3">
-          <span className="font-semibold text-colorCuatro">
+          <h1 className="hidden lg:block text-4xl font-semibold text-colorTres mb-2">
+            Comidas Caseras
+          </h1>
+          <span className="font-semibold text-colorCuatro lg:text-xl">
             ¡Anímate a probar lo mejor de nuestra cocina!
           </span>
           <br />
@@ -48,6 +51,7 @@ export default function HeroText({ redirectProducts, handleConsult }: Props) {
             positionIcon="right"
             color="bg-btn-wp"
             borderColor="border-btn-wp"
+            hover="hover:bg-green-700"
             onClick={handleConsult}
           />
         </div>
