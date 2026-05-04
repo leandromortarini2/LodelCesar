@@ -123,7 +123,7 @@ export const products = [
     categoria: "pollo-grille",
   },
   {
-    id: 15,
+    id: 16,
     nombre: "Pollo Grille",
     descripcion: "c/ Guarnición",
     precio: "8000",
@@ -132,7 +132,7 @@ export const products = [
   },
   //region choripan
   {
-    id: 16,
+    id: 17,
     nombre: "Choripan",
     descripcion: "",
     precio: "4000",
@@ -140,7 +140,7 @@ export const products = [
     categoria: "choripan",
   },
   // {
-  //   id: 17,
+  //   id: 18,
   //   nombre: "Choripan con Papas",
   //   descripcion: "",
   //   precio: "5500",
@@ -149,7 +149,7 @@ export const products = [
   // },
   //region patynesa
   // {
-  //   id: 18,
+  //   id: 19,
   //   nombre: "Patynesa",
   //   descripcion: "Lechuga y tomate",
   //   precio: "4500",
@@ -157,7 +157,7 @@ export const products = [
   //   categoria: "patynesa",
   // },
   // {
-  //   id: 19,
+  //   id: 20,
   //   nombre: "Patynesa",
   //   descripcion: "Lechuga, tomate, jamón y queso",
   //   precio: "5500",
@@ -165,7 +165,7 @@ export const products = [
   //   categoria: "patynesa",
   // },
   // {
-  //   id: 20,
+  //   id: 21,
   //   nombre: "Patynesa Completo",
   //   descripcion: "Lechuga, tomate, jamón, queso y huevo",
   //   precio: "6500",
@@ -174,7 +174,7 @@ export const products = [
   // },
   //region empanadas
   {
-    id: 21,
+    id: 22,
     nombre: "Empanada Pollo",
     descripcion: "",
     precio: "2000",
@@ -182,7 +182,7 @@ export const products = [
     categoria: "empanadas",
   },
   {
-    id: 22,
+    id: 23,
     nombre: "Empanada Carne",
     descripcion: "",
     precio: "2000",
@@ -191,7 +191,7 @@ export const products = [
   },
   //region papas
   {
-    id: 23,
+    id: 24,
     nombre: "Cono de Papas",
     descripcion: "",
     precio: "3000",
@@ -199,7 +199,7 @@ export const products = [
     categoria: "papas-fritas",
   },
   {
-    id: 24,
+    id: 25,
     nombre: "Porción de Papas",
     descripcion: "",
     precio: "5000",
@@ -207,7 +207,7 @@ export const products = [
     categoria: "papas-fritas",
   },
   {
-    id: 24,
+    id: 26,
     nombre: "Porción de Papas",
     descripcion: "A Caballo",
     precio: "7000",
@@ -216,7 +216,7 @@ export const products = [
   },
   //region tacos
   {
-    id: 25,
+    id: 27,
     nombre: "Tacos x3",
     descripcion: "",
     precio: "6000",
@@ -225,7 +225,7 @@ export const products = [
   },
   //region ensaladas
   {
-    id: 26,
+    id: 28,
     nombre: "Ensalada",
     descripcion: "Lechuga, tomate, zanahoria",
     precio: "5000",
@@ -233,7 +233,7 @@ export const products = [
     categoria: "ensaladas",
   },
   {
-    id: 27,
+    id: 29,
     nombre: "Ensalada",
     descripcion: "Lechuga, tomate, zanahoria y huevo",
     precio: "6000",
@@ -242,7 +242,7 @@ export const products = [
   },
   //region pizzas
   {
-    id: 28,
+    id: 30,
     nombre: "Muzza",
     descripcion: "",
     precio: "9000",
@@ -250,7 +250,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 29,
+    id: 31,
     nombre: "Doble Muzza",
     descripcion: "",
     precio: "13000",
@@ -258,7 +258,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 30,
+    id: 32,
     nombre: "Napolitana",
     descripcion: "",
     precio: "13000",
@@ -266,7 +266,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 31,
+    id: 33,
     nombre: "Muzza con Jamón",
     descripcion: "",
     precio: "13000",
@@ -274,7 +274,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 32,
+    id: 34,
     nombre: "Napolitana con Jamón",
     descripcion: "",
     precio: "15000",
@@ -282,7 +282,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 33,
+    id: 35,
     nombre: "Muzza con Huevo",
     descripcion: "",
     precio: "15000",
@@ -290,7 +290,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 34,
+    id: 36,
     nombre: "Jamon y Morrón",
     descripcion: "",
     precio: "15000",
@@ -298,7 +298,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 35,
+    id: 37,
     nombre: "Muzza con Papas",
     descripcion: "",
     precio: "15000",
@@ -306,7 +306,7 @@ export const products = [
     categoria: "pizzas",
   },
   // {
-  //   id: 36,
+  //   id: 38,
   //   nombre: "Muzza con Jamón y Papas",
   //   descripcion: "",
   //   precio: "15000",
@@ -314,7 +314,7 @@ export const products = [
   //   categoria: "pizzas",
   // },
   {
-    id: 37,
+    id: 39,
     nombre: "Mitades",
     descripcion: "",
     precio: "15000",
@@ -323,7 +323,7 @@ export const products = [
   },
   //region pizzas individuales
   {
-    id: 37,
+    id: 40,
     nombre: "Pizza Individual",
     descripcion: "Muzza",
     precio: "3500",
@@ -331,7 +331,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 38,
+    id: 41,
     nombre: "Pizza Individual",
     descripcion: "Muzza con Jamón",
     precio: "4500",
@@ -339,7 +339,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 39,
+    id: 42,
     nombre: "Pizza Individual",
     descripcion: "Napolitana",
     precio: "4000",
@@ -347,7 +347,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 40,
+    id: 43,
     nombre: "Pizza Individual",
     descripcion: "Napolitana con Jamón",
     precio: "5000",
@@ -355,7 +355,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 41,
+    id: 44,
     nombre: "Pizza Individual",
     descripcion: "Fugazzeta",
     precio: "5000",
@@ -363,7 +363,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 42,
+    id: 45,
     nombre: "Pizza Individual",
     descripcion: "Fugazzeta con Jamón",
     precio: "5000",
@@ -371,7 +371,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   // {
-  //   id: 43,
+  //   id: 46,
   //   nombre: "Pizza Individual",
   //   descripcion: "Calabreza",
   //   precio: "5000",
@@ -380,7 +380,7 @@ export const products = [
   // },
   //region al plato
   {
-    id: 44,
+    id: 47,
     nombre: "Mila de Pollo ",
     descripcion: "Al plato",
     precio: "8000",
@@ -388,7 +388,7 @@ export const products = [
     categoria: "al-plato",
   },
   {
-    id: 45,
+    id: 48,
     nombre: "Mila de Carne",
     descripcion: "Al plato",
     precio: "8500",
@@ -396,7 +396,7 @@ export const products = [
     categoria: "al-plato",
   },
   {
-    id: 46,
+    id: 49,
     nombre: "Hamburguesa",
     descripcion: "Al plato",
     precio: "8000",
@@ -404,7 +404,7 @@ export const products = [
     categoria: "al-plato",
   },
   {
-    id: 47,
+    id: 50,
     nombre: "Bondiola",
     descripcion: "Al plato",
     precio: "8500",
@@ -413,7 +413,7 @@ export const products = [
   },
   //region promos
   {
-    id: 48,
+    id: 51,
     nombre: "Sándwich Mila + Papas chicas",
     descripcion: "Pollo, lechuga y tomate",
     precio: "6500",
@@ -421,7 +421,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 49,
+    id: 52,
     nombre: "Sándwich Mila + Papas chicas",
     descripcion: "Carne, lechuga y tomate",
     precio: "8500",
@@ -429,7 +429,7 @@ export const products = [
     categoria: "Promos",
   },
   // {
-  //   id: 50,
+  //   id: 53,
   //   nombre: "Patynesa + Papas chicas",
   //   descripcion: "Lechuga y tomate",
   //   precio: "6000",
@@ -437,7 +437,7 @@ export const products = [
   //   categoria: "Promos",
   // },
   {
-    id: 51,
+    id: 54,
     nombre: "Empanadas",
     descripcion: "Por unidad",
     precio: "2000",
@@ -445,7 +445,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 52,
+    id: 55,
     nombre: "Hamburguesa + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "6500",
@@ -453,7 +453,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 53,
+    id: 56,
     nombre: "Bondiola + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "8500",
@@ -461,7 +461,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 53,
+    id: 57,
     nombre: "Pizza Individual + Papas chicas",
     descripcion: "",
     precio: "5000",
@@ -469,7 +469,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 53,
+    id: 58,
     nombre: "Sándwich Pollo Grille + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "7500",
@@ -477,7 +477,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 53,
+    id: 59,
     nombre: "Choripan + Papas chicas",
     descripcion: "",
     precio: "5500",
@@ -486,7 +486,7 @@ export const products = [
   },
   //region Mila Napolitana
   {
-    id: 58,
+    id: 60,
     nombre: "Sándwich Pollo",
     descripcion: "",
     precio: "7000",
@@ -494,7 +494,7 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
   {
-    id: 57,
+    id: 61,
     nombre: "Sándwich Carne",
     descripcion: "",
     precio: "9000",
@@ -502,7 +502,7 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
   {
-    id: 60,
+    id: 62,
     nombre: "Pollo c/ Guarnición",
     descripcion: "",
     precio: "10000",
@@ -510,7 +510,7 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
   {
-    id: 59,
+    id: 63,
     nombre: "Carne c/ Guarnición",
     descripcion: "",
     precio: "12000",

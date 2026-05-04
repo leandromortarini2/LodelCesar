@@ -26,7 +26,7 @@ export const Modal: React.FC<IPropsModal> = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`flex flex-col items-center gap-4  py-12 px-10 ${colorBg ? colorBg : "bg-white"} h-screen  shadow-xl ${
+        className={`relative flex flex-col items-center gap-4  py-12 px-10 ${colorBg ? colorBg : "bg-white"} min-h-170  shadow-xl ${
           modalWidth ? modalWidth : "w-full max-w-3xl"
         }`}
       >

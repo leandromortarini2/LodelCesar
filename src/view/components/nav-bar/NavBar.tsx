@@ -44,14 +44,14 @@ export default function NavBar({
   return (
     <div className="sticky top-0 w-full  z-50">
       <section className="w-full h-12 bg-colorTres flex justify-between items-center border-gray-secondary  px-3  2xl:px-10 ">
-        <div className="w-12 h-10 lg:w-[15%]  flex justify-start">
+        <div className="w-12 h-10 lg:w-[20%]  flex justify-start">
           <Logo />
         </div>
 
-        <div className="w-[80%] hidden lg:flex justify-center    ">
+        <div className=" hidden lg:flex justify-end ">
           {routes && <PanelButton routes={routes} scroll={scroll} />}
         </div>
-        <div className=" flex items-center justify-end  lg:w-[15%] ">
+        <div className=" flex items-center justify-end  lg:w-[15%] lg:hidden">
           {isOpenBurger ? (
             <div onClick={closeModalBurger} className="  lg:hidden ">
               <IoClose className="w-8 h-8 cursor-pointer text-white" />

@@ -10,7 +10,7 @@ interface Props {
 export default function Home({ redirectProducts, handleConsult }: Props) {
   return (
     <Element name="inicio">
-      <section className="  bg-gradient-to-b from-[#fefce8] to-[#f5f5f5] bg-cover  flex-1 lg:h-[630px] 2xl:h-[800px] w-full flex flex-col lg:flex-row items-center justify-center  py-20 lg:py-0">
+      <section className="  bg-gradient-to-b from-[#fefce8] to-[#f5f5f5] bg-cover  flex-1 lg:h-[630px] w-full flex flex-col lg:flex-row items-center justify-center  py-20 lg:py-0">
         <HeroText
           redirectProducts={redirectProducts}
           handleConsult={handleConsult}

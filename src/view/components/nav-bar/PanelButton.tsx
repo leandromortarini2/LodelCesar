@@ -10,18 +10,20 @@ interface Props {
 
 export default function PanelButton({ routes, scroll }: Props) {
   return (
-    <nav className="flex justify-evenly items-center  text-sm w-full">
+    <nav className="flex justify-end items-center  text-sm w-full">
       {scroll
         ? routes.map(({ url, text }) => (
             <LinkScroll key={url} to={url} smooth duration={500}>
-             <button className="btn btn-ghost text-default-text hover:bg-colorDos border-none shadow-none">{text}</button>
+              <button className="btn btn-ghost text-white hover:bg-colorDos border-none shadow-none">
+                {text}
+              </button>
             </LinkScroll>
           ))
         : routes.map(({ url, text }) => (
             <Link key={url} to={url}>
               <Button
                 text={text}
-                width="2lx:min-w-[140px]"
+                width="2xl:min-w-[140px]"
                 claseButton="secondary"
               />
             </Link>

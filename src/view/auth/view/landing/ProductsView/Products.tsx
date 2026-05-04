@@ -50,7 +50,7 @@ export default function Products({
             <p className="text-colorCuatro font-medium text-sm">
               Seleccione un plato para agregarlo a su pedido
             </p>
-            <div className="grid grid-cols-2 lg:grid-cols-4 w-full  overflow-y-auto  gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 w-full max-h-120 overflow-y-auto  gap-4">
               {products.map(
                 (item, index) =>
                   item.categoria.normalize("NFC") ===
