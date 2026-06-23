@@ -9,7 +9,7 @@ interface Props {
 }
 export default function HeroText({ redirectProducts, handleConsult }: Props) {
   return (
-    <div className="px-4  lg:px-0 lg:w-1/2  items-center h-full  flex  md:justify-center lg:justify-end">
+    <div className="px-4   lg:px-0 lg:w-1/2  items-center h-full  flex  md:justify-center lg:justify-center">
       <div className=" md:w-3/4 2xl:w-3/5 space-y-10 md:space-y-8">
         <div className="lg:hidden w-full flex flex-col items-center gap-1 justify-center ">
           <HeroImg />
@@ -39,7 +39,7 @@ export default function HeroText({ redirectProducts, handleConsult }: Props) {
             Icon={IoIosArrowForward}
             positionIcon="right"
             color="bg-yellow-400"
-            colorText="text-colorTres"
+            colorText="text-gray-700"
             hover="hover:bg-yellow-400/80"
             sizeText="text-sm"
           />

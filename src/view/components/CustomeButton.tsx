@@ -18,6 +18,7 @@ interface props {
   containerClass?: string;
   colorBg?: string;
   colorText?: string;
+  refButton?: React.RefObject<HTMLButtonElement | null>;
 }
 
 const CustomeButton = ({
@@ -38,6 +39,7 @@ const CustomeButton = ({
   containerClass,
   colorBg,
   colorText,
+  refButton,
 }: props) => {
   const disabledStyles =
     "bg-gray-primary  cursor-not-allowed pointer-events-none border-gray-primary";
@@ -46,6 +48,7 @@ const CustomeButton = ({
     <div className={` ${containerClass} flex gap-10`}>
       {claseButton === "primary" && Icon && (
         <button
+          ref={refButton}
           disabled={disabled}
           type={type ?? "button"}
           onClick={onclick}
@@ -69,6 +72,7 @@ const CustomeButton = ({
 
       {claseButton === "primary" && !Icon && (
         <button
+          ref={refButton}
           type={type ?? "button"}
           disabled={disabled}
           onClick={onclick}
@@ -91,6 +95,7 @@ const CustomeButton = ({
 
       {claseButton === "secondary" && Icon && (
         <button
+          ref={refButton}
           disabled={disabled}
           type={type}
           onClick={onclick}
@@ -118,6 +123,7 @@ const CustomeButton = ({
 
       {claseButton === "secondary" && !Icon && (
         <button
+          ref={refButton}
           disabled={disabled}
           type={type ?? "button"}
           onClick={onclick}
@@ -144,6 +150,7 @@ const CustomeButton = ({
 
       {claseButton === "iconButton" && Icon && (
         <button
+          ref={refButton}
           disabled={disabled}
           type={type}
           onClick={onclick}

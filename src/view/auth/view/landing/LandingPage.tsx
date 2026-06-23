@@ -1,6 +1,5 @@
 import { Drawer } from "../../../components/drawer/Drawer";
 import Home from "./homeView/view/Home";
-// import InfoBar from "../../components/InfoBar";
 import Footer from "../../../components/footer/Footer";
 import NavBar from "../../../components/nav-bar/NavBar";
 import { routesLanding, social } from "../../../../utils/routesNavBar";
@@ -9,12 +8,16 @@ import useLogicLanding from "../../hook/useLogicLanding";
 import Products from "./ProductsView/Products";
 import DailySpecial from "../../components/DailYSpecial";
 import useProductsView from "./ProductsView/hooks/useProductsView";
+import { ModalPedido } from "../../../components/ModalPedido"; // ajustá el path
 
 export default function LandingPage() {
   const {
     handleDrawer,
     handleSubmitCart,
+    handleConfirmPedido,
     isOpen,
+    isModalPedidoOpen,
+    setIsModalPedidoOpen,
     method,
     handleRedirectSocial,
     cart,
@@ -26,6 +29,7 @@ export default function LandingPage() {
   } = useLogicLanding();
 
   const productsLogic = useProductsView({ openDrawer: handleDrawer });
+
   return (
     <div>
       <FormProvider {...method}>
@@ -47,8 +51,6 @@ export default function LandingPage() {
           redirectProducts={redirectProducts}
           handleConsult={handleConsult}
         />
-        {/* <InfoBar /> */}
-        {/* <Products handleDrawer={handleDrawer} /> */}
         <DailySpecial handleConsult={handleConsult} />
         <Products {...productsLogic} />
         <Footer handleRedirectSocial={handleRedirectSocial} />
@@ -61,6 +63,12 @@ export default function LandingPage() {
           onDeleteProdCart={onDeleteProdCart}
           handleClose={handleDrawer}
         />
+        {isModalPedidoOpen && (
+          <ModalPedido
+            onConfirm={handleConfirmPedido}
+            onClose={() => setIsModalPedidoOpen(false)}
+          />
+        )}
       </FormProvider>
     </div>
   );

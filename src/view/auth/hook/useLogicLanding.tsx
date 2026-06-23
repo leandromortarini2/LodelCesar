@@ -1,13 +1,14 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import customeAlert from "../../../utils/customeAlert";
 import useLandingStore from "../store/storeLanding";
 import type { RoutesNavBar } from "../../../interfaces/RoutesNavBar";
 import { scroller } from "react-scroll";
+import type { OrderFormData } from "../../components/ModalPedido";
 
 export default function useLogicLanding() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalPedidoOpen, setIsModalPedidoOpen] = useState(false);
 
   const cart = useLandingStore((state) => state.cart);
   const setCart = useLandingStore((state) => state.setCart);
@@ -121,31 +122,36 @@ export default function useLogicLanding() {
 
   function handleSubmitCart() {
     if (cart.length === 0) return;
+    setIsModalPedidoOpen(true);
+  }
 
+  function handleConfirmPedido({ nombre, direccion, hora }: OrderFormData) {
     let message = `* Nuevo Pedido - Del Cesar\n`;
+    message += `--------------------------\n\n`;
+    message += `👤 *Nombre:* ${nombre}\n`;
+    message += `📍 *Dirección:* ${direccion}\n`;
+    message += `🕐 *Hora de entrega:* ${hora}\n\n`;
     message += `--------------------------\n\n`;
 
     cart.forEach((item) => {
       const categoriaMostrada =
         item.categoria === "Sanguche de Milanesa" && "Sanguche de Milanesa";
-
       const subtotal = Number(item.precio) * (item.cantidad || 1);
 
       message += `-  ${categoriaMostrada ? `*${categoriaMostrada}* (${item.nombre})` : `*${item.nombre}*`} \n`;
       if (item.descripcion) message += `- Descripcion: ${item.descripcion}\n`;
       message += `- Precio unit: $${item.precio}\n`;
       message += `- Cantidad: ${item.cantidad || 1}\n`;
-      message += `- Subtotal: *$${subtotal}*\n`;
-      message += `\n`;
+      message += `- Subtotal: *$${subtotal}*\n\n`;
       message += `--------------------------\n`;
     });
 
     message += `*TOTAL A PAGAR: $${totalCart}*\n\n`;
 
     const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/5491122883245?text=${encodedMessage}`;
 
-    const phoneNumber = "5491122883245";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    setIsModalPedidoOpen(false);
 
     customeAlert({
       title: "Vas a ser redirigido a WhatsApp",
@@ -174,8 +180,11 @@ export default function useLogicLanding() {
 
   return {
     handleSubmitCart,
+    handleConfirmPedido,
     handleDrawer,
     isOpen,
+    isModalPedidoOpen,
+    setIsModalPedidoOpen,
     method,
     handleRedirectSocial,
     customeAlert,
