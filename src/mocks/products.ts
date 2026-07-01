@@ -1,3 +1,7 @@
+//region PROX ID 65
+//
+//
+//
 export const products = [
   //region Sándwichs
   {
@@ -97,9 +101,17 @@ export const products = [
     img: "https://i.imgur.com/NPbaApy.jpeg",
     categoria: "hamburguesas",
   },
-  //region pollo grille
   {
     id: 13,
+    nombre: "Hamburguesa Vegana",
+    descripcion: "Lechuga, tomate",
+    precio: "5500",
+    img: "https://i.imgur.com/KaOJM7b.jpeg",
+    categoria: "hamburguesas",
+  },
+  //region pollo grille
+  {
+    id: 14,
     nombre: "Pollo Grille",
     descripcion: "Lechuga y tomate",
     precio: "6500",
@@ -107,7 +119,7 @@ export const products = [
     categoria: "pollo-grille",
   },
   {
-    id: 14,
+    id: 15,
     nombre: "Pollo Grille",
     descripcion: "Lechuga, tomate, jamón y queso",
     precio: "7500",
@@ -115,7 +127,7 @@ export const products = [
     categoria: "pollo-grille",
   },
   {
-    id: 15,
+    id: 16,
     nombre: "Pollo Grille Completo",
     descripcion: "Lechuga, tomate, jamón, queso y huevo",
     precio: "8500",
@@ -123,16 +135,16 @@ export const products = [
     categoria: "pollo-grille",
   },
   {
-    id: 16,
+    id: 17,
     nombre: "Pollo Grille",
-    descripcion: "c/ Guarnición",
+    descripcion: "c/ Guarnición",
     precio: "8500",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "pollo-grille",
   },
   //region choripan
   {
-    id: 17,
+    id: 18,
     nombre: "Choripan",
     descripcion: "",
     precio: "4000",
@@ -174,24 +186,32 @@ export const products = [
   // },
   //region empanadas
   {
-    id: 22,
+    id: 19,
     nombre: "Empanada Pollo",
     descripcion: "",
-    precio: "2000",
+    precio: "2500",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "empanadas",
   },
   {
-    id: 23,
+    id: 20,
     nombre: "Empanada Carne",
     descripcion: "",
-    precio: "2000",
+    precio: "2500",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "empanadas",
+  },
+  {
+    id: 21,
+    nombre: "Empanada Fatay",
+    descripcion: "",
+    precio: "2500",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "empanadas",
   },
   //region papas
   {
-    id: 24,
+    id: 22,
     nombre: "Cono de Papas",
     descripcion: "",
     precio: "3000",
@@ -199,7 +219,7 @@ export const products = [
     categoria: "papas-fritas",
   },
   {
-    id: 25,
+    id: 23,
     nombre: "Porción de Papas",
     descripcion: "",
     precio: "5000",
@@ -207,7 +227,7 @@ export const products = [
     categoria: "papas-fritas",
   },
   {
-    id: 26,
+    id: 24,
     nombre: "Porción de Papas",
     descripcion: "A caballo",
     precio: "7000",
@@ -216,7 +236,7 @@ export const products = [
   },
   //region tacos
   {
-    id: 27,
+    id: 25,
     nombre: "Tacos x3",
     descripcion: "",
     precio: "6500",
@@ -225,7 +245,7 @@ export const products = [
   },
   //region ensaladas
   {
-    id: 28,
+    id: 26,
     nombre: "Ensalada",
     descripcion: "Lechuga, tomate, zanahoria",
     precio: "5000",
@@ -233,7 +253,7 @@ export const products = [
     categoria: "ensaladas",
   },
   {
-    id: 29,
+    id: 27,
     nombre: "Ensalada",
     descripcion: "Lechuga, tomate, zanahoria y huevo",
     precio: "6000",
@@ -242,7 +262,7 @@ export const products = [
   },
   //region pizzas
   {
-    id: 30,
+    id: 28,
     nombre: "Muzza",
     descripcion: "",
     precio: "9000",
@@ -250,7 +270,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 31,
+    id: 29,
     nombre: "Doble Muzza",
     descripcion: "",
     precio: "13000",
@@ -258,7 +278,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 32,
+    id: 30,
     nombre: "Napolitana",
     descripcion: "",
     precio: "13000",
@@ -266,7 +286,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 33,
+    id: 31,
     nombre: "Muzza con Jamón",
     descripcion: "",
     precio: "13000",
@@ -274,7 +294,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 34,
+    id: 32,
     nombre: "Napolitana con Jamón",
     descripcion: "",
     precio: "15000",
@@ -282,7 +302,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 35,
+    id: 33,
     nombre: "Muzza con Huevo",
     descripcion: "",
     precio: "15000",
@@ -290,7 +310,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 36,
+    id: 34,
     nombre: "Jamon y Morrón",
     descripcion: "",
     precio: "15000",
@@ -298,7 +318,7 @@ export const products = [
     categoria: "pizzas",
   },
   {
-    id: 37,
+    id: 35,
     nombre: "Muzza con Papas",
     descripcion: "",
     precio: "15000",
@@ -314,7 +334,7 @@ export const products = [
   //   categoria: "pizzas",
   // },
   {
-    id: 39,
+    id: 36,
     nombre: "Mitades",
     descripcion: "",
     precio: "15000",
@@ -323,7 +343,7 @@ export const products = [
   },
   //region pizzas individuales
   {
-    id: 40,
+    id: 37,
     nombre: "Pizza Individual",
     descripcion: "Muzza",
     precio: "3500",
@@ -331,7 +351,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 41,
+    id: 38,
     nombre: "Pizza Individual",
     descripcion: "Muzza con Jamón",
     precio: "4500",
@@ -339,7 +359,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 42,
+    id: 39,
     nombre: "Pizza Individual",
     descripcion: "Napolitana",
     precio: "4000",
@@ -347,7 +367,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 43,
+    id: 40,
     nombre: "Pizza Individual",
     descripcion: "Napolitana con Jamón",
     precio: "5000",
@@ -355,7 +375,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 44,
+    id: 41,
     nombre: "Pizza Individual",
     descripcion: "Fugazzeta",
     precio: "5000",
@@ -363,7 +383,7 @@ export const products = [
     categoria: "pizzas-individuales",
   },
   {
-    id: 45,
+    id: 42,
     nombre: "Pizza Individual",
     descripcion: "Fugazzeta con Jamón",
     precio: "5000",
@@ -380,7 +400,7 @@ export const products = [
   // },
   //region al plato/plato del dia
   {
-    id: 47,
+    id: 43,
     nombre: "Mila de Pollo ",
     descripcion: "Al plato",
     precio: "8500",
@@ -388,7 +408,7 @@ export const products = [
     categoria: "al-plato",
   },
   {
-    id: 48,
+    id: 44,
     nombre: "Mila de Carne",
     descripcion: "Al plato",
     precio: "9000",
@@ -396,7 +416,7 @@ export const products = [
     categoria: "al-plato",
   },
   {
-    id: 49,
+    id: 45,
     nombre: "Hamburguesa",
     descripcion: "Al plato",
     precio: "8500",
@@ -404,7 +424,7 @@ export const products = [
     categoria: "al-plato",
   },
   {
-    id: 50,
+    id: 46,
     nombre: "Bondiola",
     descripcion: "Al plato",
     precio: "9000",
@@ -413,7 +433,23 @@ export const products = [
   },
   //region promos
   {
-    id: 51,
+    id: 47,
+    nombre: "Gigante de Mila + Papas",
+    descripcion: "Carne, lechuga y tomate",
+    precio: "20000",
+    img: "https://i.imgur.com/6w9M1sJ.jpeg",
+    categoria: "Promos",
+  },
+  {
+    id: 48,
+    nombre: "Gigante de Mila + Papas",
+    descripcion: "Pollo, lechuga y tomate",
+    precio: "15000",
+    img: "",
+    categoria: "Promos",
+  },
+  {
+    id: 49,
     nombre: "Sándwich Mila + Papas chicas",
     descripcion: "Pollo, lechuga y tomate",
     precio: "7000",
@@ -421,7 +457,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 52,
+    id: 50,
     nombre: "Sándwich Mila + Papas chicas",
     descripcion: "Carne, lechuga y tomate",
     precio: "9000",
@@ -437,15 +473,31 @@ export const products = [
   //   categoria: "Promos",
   // },
   {
-    id: 54,
-    nombre: "Empanadas",
+    id: 51,
+    nombre: "Empanada Carne",
     descripcion: "Por unidad",
-    precio: "2000",
+    precio: "2500",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "Promos",
   },
   {
-    id: 55,
+    id: 52,
+    nombre: "Empanada Pollo",
+    descripcion: "Por unidad",
+    precio: "2500",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "Promos",
+  },
+  {
+    id: 53,
+    nombre: "Empanada Fatay",
+    descripcion: "Por unidad",
+    precio: "2500",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "Promos",
+  },
+  {
+    id: 54,
     nombre: "Hamburguesa + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "7000",
@@ -453,7 +505,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 56,
+    id: 55,
     nombre: "Bondiola + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "9000",
@@ -461,7 +513,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 57,
+    id: 56,
     nombre: "Pizza Individual + Papas chicas",
     descripcion: "",
     precio: "5000",
@@ -469,7 +521,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 58,
+    id: 57,
     nombre: "Sándwich Pollo Grille + Papas chicas",
     descripcion: "Lechuga y tomate",
     precio: "8000",
@@ -477,7 +529,7 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 59,
+    id: 58,
     nombre: "Choripan + Papas chicas",
     descripcion: "",
     precio: "5500",
@@ -485,16 +537,24 @@ export const products = [
     categoria: "Promos",
   },
   {
-    id: 64,
+    id: 59,
     nombre: "Muzza Ind + Papas chicas",
     descripcion: "",
     precio: "5000",
     img: "https://i.imgur.com/aHFTmhs.jpeg",
     categoria: "Promos",
   },
-  //region Mila Napolitana
   {
     id: 60,
+    nombre: "Hamburguesa Vegana + Papas chicas",
+    descripcion: "Lechuga, tomate",
+    precio: "7000",
+    img: "",
+    categoria: "Promos",
+  },
+  //region Mila Napolitana
+  {
+    id: 61,
     nombre: "Sándwich Pollo",
     descripcion: "",
     precio: "7500",
@@ -502,7 +562,7 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
   {
-    id: 61,
+    id: 62,
     nombre: "Sándwich Carne",
     descripcion: "",
     precio: "9500",
@@ -510,7 +570,7 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
   {
-    id: 62,
+    id: 63,
     nombre: "Pollo c/ Guarnición",
     descripcion: "",
     precio: "10500",
@@ -518,7 +578,7 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
   {
-    id: 63,
+    id: 64,
     nombre: "Carne c/ Guarnición",
     descripcion: "",
     precio: "12500",
@@ -526,14 +586,6 @@ export const products = [
     categoria: "Milanesa Napolitana",
   },
 
-  // {
-  //   id: ,
-  //   nombre: "",
-  //   descripcion: "",
-  //   precio: "",
-  //   img: "",
-  //   categoria: "",
-  // },
   // {
   //   id: ,
   //   nombre: "",
