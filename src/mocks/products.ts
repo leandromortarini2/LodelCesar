@@ -1,4 +1,4 @@
-//region PROX ID 65
+//region PROX ID 69
 //
 //
 //
@@ -428,6 +428,39 @@ export const products = [
     nombre: "Bondiola",
     descripcion: "Al plato",
     precio: "9000",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "al-plato",
+  },
+  {
+    id: 65,
+    nombre: "Tortilla de Papa",
+    descripcion: "Porción",
+    precio: "2500",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "al-plato",
+  },
+  {
+    id: 66,
+    nombre: "Tortilla de Papa",
+    descripcion: "Completa",
+    precio: "10000",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "al-plato",
+  },
+
+  {
+    id: 67,
+    nombre: "Tortilla de Papa Rellena",
+    descripcion: "Porcion - Jamón y Queso",
+    precio: "3000",
+    img: "https://i.imgur.com/mgHFbun.png",
+    categoria: "al-plato",
+  },
+  {
+    id: 68,
+    nombre: "Tortilla de Papa Rellena",
+    descripcion: "Completa - Jamón y Queso",
+    precio: "12000",
     img: "https://i.imgur.com/mgHFbun.png",
     categoria: "al-plato",
   },
