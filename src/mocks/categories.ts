@@ -61,7 +61,7 @@ export const categories: Category[] = [
   {
     id: "al-plato",
     label: "Al Plato",
-    img: "https://i.imgur.com/Cj0YtkB.jpeg",
+    img: "https://i.imgur.com/LDcKwVS.jpeg",
   },
   {
     id: "Promos",
