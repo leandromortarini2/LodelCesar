@@ -8,10 +8,12 @@ export default function Footer({
   handleRedirectSocial: any;
 }) {
   return (
-    <footer className="w-full lg:h-80 bg-colorUno flex flex-col justify-center items-center py-8 lg:py-0 gap-5">
-      <Contact />
-      <hr className="text-colorTres h-2 w-[80%]" />
-      <EmpresasIcons handleRedirectSocial={handleRedirectSocial} />
+    <footer className="w-full lg:h-80 bg-colorTres flex justify-center py-8 lg:py-0 px-6">
+      <div className="w-full max-w-[1280px] flex flex-col justify-center items-center gap-5">
+        <Contact />
+        <hr className="text-colorUno h-2 w-full" />
+        <EmpresasIcons handleRedirectSocial={handleRedirectSocial} />
+      </div>
     </footer>
   );
 }

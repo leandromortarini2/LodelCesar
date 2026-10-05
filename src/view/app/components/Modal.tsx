@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CustomeButton from "../../components/CustomeButton";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
@@ -19,14 +19,23 @@ export const Modal: React.FC<IPropsModal> = ({
   buttonClose,
   colorBg,
 }) => {
+  useEffect(() => {
+    if (!close) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [close]);
+
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/20  "
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 p-4"
       onClick={close}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`relative flex flex-col items-center gap-4  py-12 px-10 ${colorBg ? colorBg : "bg-white"}   shadow-xl ${
+        className={`relative flex flex-col items-center gap-4  py-12 px-10 rounded-2xl ${colorBg ? colorBg : "bg-white"}   shadow-xl ${
           modalWidth ? modalWidth : "w-full max-w-3xl"
         }`}
       >
@@ -40,7 +49,9 @@ export const Modal: React.FC<IPropsModal> = ({
             <CustomeButton
               onClick={close}
               Icon={IoMdCloseCircleOutline}
-              color="white"
+              color="text-error"
+              colorBg="bg-transparent"
+              hover="hover:bg-error/10"
               claseButton="secondary"
             />
           )}

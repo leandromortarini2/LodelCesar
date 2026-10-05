@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import type { Product } from "../../auth/view/landing/ProductsView/types";
 import Button from "../CustomeButton";
@@ -22,8 +23,18 @@ export const Drawer = ({
   onDeleteProdCart,
   handleClose,
 }: IProp) => {
+  useEffect(() => {
+    if (!open) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleClose();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [open, handleClose]);
+
   return (
     <div
+      onClick={handleClose}
       className={`fixed inset-0 bg-black/50 z-50 transition-opacity flex justify-end duration-300 ease-in-out ${
         open
           ? "opacity-100 pointer-events-auto"

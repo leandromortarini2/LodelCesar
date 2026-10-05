@@ -24,11 +24,11 @@ export default function Products({
       className="flex flex-col gap-6 py-10 px-4 md:pt-0 bg-background"
     >
       <div className="w-full gap-4 flex flex-col p-2">
-        <h1 className="text-2xl lg:text-3xl font-semibold text-colorTres lg:text-left">
-          Nuestros Platos
-        </h1>
+        <div className="w-fit mx-auto flex flex-col gap-4">
+          <h1 className="text-2xl lg:text-3xl font-semibold text-colorTres text-left">
+            Nuestros Platos
+          </h1>
 
-        <div className="w-full flex justify-center">
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">
             {categories.map((cat) => (
               <CategoryCard
@@ -47,10 +47,10 @@ export default function Products({
             colorBg="bg-[#f9f9f9]"
             title={categorySelected?.label || ""}
           >
-            <p className="text-colorCuatro font-medium text-sm">
+            <p className="w-full text-left text-default-text font-medium text-sm">
               Seleccione un plato para agregarlo a su pedido
             </p>
-            <div className="grid grid-cols-2 lg:grid-cols-4 w-full max-h-120 overflow-y-auto  gap-2">
+            <div className="grid grid-cols-2 lg:grid-cols-4 w-full max-h-96 overflow-y-auto gap-2 p-1">
               {products.map(
                 (item, index) =>
                   item.categoria.normalize("NFC") ===
@@ -63,19 +63,18 @@ export default function Products({
                     />
                   ),
               )}
-
-              <div className="absolute bottom-5 right-10">
-                <CustomeButton
-                  claseButton="primary"
-                  Icon={IoCart}
-                  text="Agregar al Pedido"
-                  color="bg-btn-wp"
-                  hover="hover:bg-btn-wp/90"
-                  sizeText="text-base"
-                  onClick={handleAddToCart}
-                  disabled={!prodSelected}
-                />
-              </div>
+            </div>
+            <div className="w-full flex justify-end pt-4 mt-2 border-t border-colorTres/10">
+              <CustomeButton
+                claseButton="primary"
+                Icon={IoCart}
+                text="Agregar al Pedido"
+                color="bg-btn-wp"
+                hover="hover:bg-btn-wp/90"
+                sizeText="text-base"
+                onClick={handleAddToCart}
+                disabled={!prodSelected}
+              />
             </div>
           </Modal>
         )}
