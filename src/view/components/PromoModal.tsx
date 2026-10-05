@@ -34,11 +34,10 @@ export default function PromoModal({
           className="h-24 w-24 object-contain"
         />
         <h2 className="text-2xl font-bold text-colorTres">
-          Servicio de catering
+          ¡Servicio de Catering!{" "}
         </h2>
         <p className="text-gray-600">
-          Hacemos salidas y eventos con servicio de catering. Si te interesa,
-          contactate con nosotros.
+          Hacé tus eventos especiales con nosotros. Consultanos para más info.
         </p>
         <button
           type="button"
