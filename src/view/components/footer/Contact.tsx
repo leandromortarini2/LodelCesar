@@ -1,7 +1,13 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
+import EmpresasIcons from "./CompanyIcons";
 import { IoIosCall } from "react-icons/io";
 
-export default function Contact() {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export default function Contact({
+  handleRedirectSocial,
+}: {
+  handleRedirectSocial: any;
+}) {
   return (
     <section className="w-full lg:h-40  flex  lg:flex-row flex-col gap-8 lg:justify-between justify-center  items-center">
       <h1 className="text-2xl lg:text-4xl font-semibold text-colorUno">
@@ -22,6 +28,11 @@ export default function Contact() {
         <span className="flex justify-center items-center gap-2 ">
           Todo casero para tu almuerzo, cena o evento. servicio de catering.
         </span>
+      </div>
+
+      <div className="w-64 h-full font-semibold flex flex-col gap-3 text-white items-center justify-center text-center">
+        <span>Seguinos en redes</span>
+        <EmpresasIcons handleRedirectSocial={handleRedirectSocial} />
       </div>
     </section>
   );

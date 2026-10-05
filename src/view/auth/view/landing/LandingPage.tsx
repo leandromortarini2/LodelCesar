@@ -9,6 +9,7 @@ import Products from "./ProductsView/Products";
 import DailySpecial from "../../components/DailYSpecial";
 import useProductsView from "./ProductsView/hooks/useProductsView";
 import { ModalPedido } from "../../../components/ModalPedido"; // ajustá el path
+import PromoModal from "../../../components/PromoModal";
 
 export default function LandingPage() {
   const {
@@ -53,6 +54,7 @@ export default function LandingPage() {
         />
         <DailySpecial handleConsult={handleConsult} />
         <Products {...productsLogic} />
+        <PromoModal handleConsult={handleConsult} />
         <Footer handleRedirectSocial={handleRedirectSocial} />
         <Drawer
           onSubmit={handleSubmitCart}
