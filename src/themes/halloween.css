@@ -1,0 +1,126 @@
+/* Temática Halloween: todo scopeado a [data-campaign="halloween"] */
+[data-campaign="halloween"] {
+  --color-colorUno: #ff8a1f;
+  --color-colorDos: #5b3a85;
+  --color-colorTres: #2d1245;
+  --color-colorCuatro: #e8590c;
+  --color-cuartity: #c2410c;
+  --color-quintity: #7a5ca0;
+  --color-default-text: #2a1740;
+  --halloween-light-text: #ece6f5;
+  --color-background: #f6f0fb;
+  --color-white-secondary: #f1e8f8;
+  --color-colorBorder: #d9c8ec;
+  --halloween-bat: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2032%22%3E%3Cg%20fill%3D%22%23a77be8%22%3E%3Cpath%20id%3D%22h%22%20d%3D%22M32%208L30%204L29%209C24%206%2016%206%206%2013C11%2013%2014%2015%2015%2018C18%2016%2021%2016%2023%2019C25%2017%2028%2017%2029%2021L32%2027Z%22%2F%3E%3Cpath%20transform%3D%22translate(64%200)%20scale(-1%201)%22%20d%3D%22M32%208L30%204L29%209C24%206%2016%206%206%2013C11%2013%2014%2015%2015%2018C18%2016%2021%2016%2023%2019C25%2017%2028%2017%2029%2021L32%2027Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --halloween-web-left: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20%20fill%3D%22none%22%20stroke%3D%22%23e9d5ff%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L100.0%200.0M0%200L92.4%2038.3M0%200L70.7%2070.7M0%200L38.3%2092.4M0%200L0.0%20100.0M28.0%200.0Q23.6%204.7%2025.9%2010.7M25.9%2010.7Q20.0%2013.4%2019.8%2019.8M19.8%2019.8Q13.4%2020.0%2010.7%2025.9M10.7%2025.9Q4.7%2023.6%200.0%2028.0M50.0%200.0Q42.2%208.4%2046.2%2019.1M46.2%2019.1Q35.8%2023.9%2035.4%2035.4M35.4%2035.4Q23.9%2035.8%2019.1%2046.2M19.1%2046.2Q8.4%2042.2%200.0%2050.0M72.0%200.0Q60.7%2012.1%2066.5%2027.6M66.5%2027.6Q51.5%2034.4%2050.9%2050.9M50.9%2050.9Q34.4%2051.5%2027.6%2066.5M27.6%2066.5Q12.1%2060.7%200.0%2072.0M94.0%200.0Q79.3%2015.8%2086.8%2036.0M86.8%2036.0Q67.2%2044.9%2066.5%2066.5M66.5%2066.5Q44.9%2067.2%2036.0%2086.8M36.0%2086.8Q15.8%2079.3%200.0%2094.0%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --halloween-web-right: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20transform%3D%22translate(100%200)%20scale(-1%201)%22%20fill%3D%22none%22%20stroke%3D%22%23e9d5ff%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L100.0%200.0M0%200L92.4%2038.3M0%200L70.7%2070.7M0%200L38.3%2092.4M0%200L0.0%20100.0M28.0%200.0Q23.6%204.7%2025.9%2010.7M25.9%2010.7Q20.0%2013.4%2019.8%2019.8M19.8%2019.8Q13.4%2020.0%2010.7%2025.9M10.7%2025.9Q4.7%2023.6%200.0%2028.0M50.0%200.0Q42.2%208.4%2046.2%2019.1M46.2%2019.1Q35.8%2023.9%2035.4%2035.4M35.4%2035.4Q23.9%2035.8%2019.1%2046.2M19.1%2046.2Q8.4%2042.2%200.0%2050.0M72.0%200.0Q60.7%2012.1%2066.5%2027.6M66.5%2027.6Q51.5%2034.4%2050.9%2050.9M50.9%2050.9Q34.4%2051.5%2027.6%2066.5M27.6%2066.5Q12.1%2060.7%200.0%2072.0M94.0%200.0Q79.3%2015.8%2086.8%2036.0M86.8%2036.0Q67.2%2044.9%2066.5%2066.5M66.5%2066.5Q44.9%2067.2%2036.0%2086.8M36.0%2086.8Q15.8%2079.3%200.0%2094.0%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+[data-campaign="halloween"] body {
+  background-color: #101828;
+  background-image: linear-gradient(180deg, #101828 0%, #250229 100%);
+  background-attachment: fixed;
+  color: var(--halloween-light-text);
+}
+
+/* Fondos de secciones y paneles (deben ganar a las utilidades bg-*) */
+[data-campaign="halloween"] .bg-background,
+[data-campaign="halloween"] .bg-white-secondary {
+  background: transparent;
+}
+
+[data-campaign="halloween"] section.bg-linear-to-b {
+  background-image: none;
+}
+
+/* Botón "Ver Comidas" de la portada: naranja de la temática */
+[data-campaign="halloween"] .bg-yellow-400,
+[data-campaign="halloween"] .bg-yellow-400:hover {
+  background-color: var(--color-colorUno);
+}
+
+[data-campaign="halloween"] .bg-yellow-400:hover {
+  background-color: var(--color-cuartity);
+}
+
+/* Botón de cerrar del carrito: fondo visible sobre el drawer oscuro */
+[data-campaign="halloween"] .bg-\[\#f9f9f9\] {
+  background-color: #5b3a85;
+  color: #fff;
+}
+
+/* Paneles flotantes (drawer y menú móvil) necesitan fondo propio */
+[data-campaign="halloween"] .bg-background.transform,
+[data-campaign="halloween"] .bg-white-secondary.absolute {
+  background: linear-gradient(180deg, #101828 0%, #250229 100%);
+}
+
+/* Colores de texto: en una capa baja para no pisar utilidades text-* de cada elemento */
+@layer base {
+  /* Secciones sobre fondo oscuro: texto claro */
+  [data-campaign="halloween"] .bg-background,
+  [data-campaign="halloween"] .bg-white-secondary,
+  [data-campaign="halloween"] section.bg-linear-to-b {
+    --color-colorTres: #e9d5ff;
+    --color-default-text: #ece6f5;
+    --color-gray-400: #b9a9d4;
+    --color-gray-500: #c4b6dc;
+    --color-gray-600: #d3c8e6;
+    --color-gray-700: #e0d8ee;
+    color: var(--halloween-light-text);
+  }
+
+  /* Superficies claras dentro de secciones oscuras: se restauran los colores oscuros */
+  [data-campaign="halloween"] .bg-white,
+  [data-campaign="halloween"] .bg-colorUno,
+  [data-campaign="halloween"] .bg-yellow-400 {
+    --color-colorTres: #2d1245;
+    --color-default-text: #2a1740;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    color: #2a1740;
+  }
+}
+
+/* Murciélagos volando bajo la barra de navegación */
+[data-campaign="halloween"]::before {
+  content: "";
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  background-image: var(--halloween-bat), var(--halloween-bat);
+  background-repeat: repeat-x, repeat-x;
+  background-size: 44px 22px, 30px 15px;
+  background-position: 0 6px, 120px 38px;
+  pointer-events: none;
+  z-index: 40;
+  animation: halloween-bats 38s linear infinite;
+}
+
+/* Telarañas en las esquinas superiores */
+[data-campaign="halloween"]::after {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 120px;
+  background-image: var(--halloween-web-left), var(--halloween-web-right);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right top;
+  background-size: 120px 120px, 120px 120px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 60;
+}
+
+@keyframes halloween-bats {
+  from { background-position: 0 6px, 120px 38px; }
+  to { background-position: 100vw 6px, calc(120px - 100vw) 38px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-campaign="halloween"]::before { animation: none; }
+}

@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import CartButton from "./LoginButton";
+import CampaignSwitcher from "./CampaignSwitcher";
 import Search from "../../app/components/Search";
 
 export default function InfoBar({
@@ -24,7 +25,8 @@ export default function InfoBar({
         handleClean={handleCleanSearch}
         isSearching={searchTerm?.length > 0}
       />
-      <div className="flex justify-end">
+      <div className="flex justify-end items-center gap-3">
+        <CampaignSwitcher />
         <CartButton handleDrawer={handleDrawer} />
       </div>
     </section>

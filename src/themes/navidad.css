@@ -1,0 +1,61 @@
+/* Temática navideña: todo scopeado a [data-campaign="navidad"] */
+[data-campaign="navidad"] {
+  --color-colorUno: #c8102e;
+  --color-colorDos: #a50e25;
+  --color-colorTres: #165b33;
+  --color-colorCuatro: #e63946;
+  --color-cuartity: #d4a017;
+  --color-quintity: #5c7a4d;
+  --color-background: #fffaf0;
+  --color-colorBorder: #e8d9b5;
+  --navidad-pattern: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%20viewBox%3D%220%200%20220%20220%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23165b33%22%20stroke-opacity%3D%22.16%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%0A%3Cg%20transform%3D%22translate(40%2040)%22%3E%3Cpath%20d%3D%22M0-14V14M-12-7L12%207M-12%207L12-7%22%2F%3E%3Cpath%20d%3D%22M-3-12L0-8L3-12M-3%2012L0%208L3%2012%22%2F%3E%3C%2Fg%3E%0A%3Cg%20transform%3D%22translate(165%20150)%20scale(.8)%22%3E%3Cpath%20d%3D%22M0-14V14M-12-7L12%207M-12%207L12-7%22%2F%3E%3Cpath%20d%3D%22M-3-12L0-8L3-12M-3%2012L0%208L3%2012%22%2F%3E%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%20transform%3D%22translate(150%2045)%22%3E%3Crect%20x%3D%22-3%22%20y%3D%22-20%22%20width%3D%226%22%20height%3D%227%22%20fill%3D%22%23d4a017%22%20fill-opacity%3D%22.28%22%2F%3E%3Ccircle%20r%3D%2213%22%20fill%3D%22%23c8102e%22%20fill-opacity%3D%22.16%22%2F%3E%3Cpath%20d%3D%22M-8-4Q0%202%208-4%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%0A%3Cg%20transform%3D%22translate(55%20165)%22%3E%3Crect%20x%3D%22-3%22%20y%3D%22-20%22%20width%3D%226%22%20height%3D%227%22%20fill%3D%22%23d4a017%22%20fill-opacity%3D%22.28%22%2F%3E%3Ccircle%20r%3D%2213%22%20fill%3D%22%23165b33%22%20fill-opacity%3D%22.15%22%2F%3E%3Cpath%20d%3D%22M-8-4Q0%202%208-4%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%0A%3Cpolygon%20transform%3D%22translate(105%20105)%22%20fill%3D%22%23d4a017%22%20fill-opacity%3D%22.25%22%20points%3D%220%2C-13%204%2C-4%2013%2C-4%206%2C2%208%2C12%200%2C6%20-8%2C12%20-6%2C2%20-13%2C-4%20-4%2C-4%22%2F%3E%0A%3Cg%20transform%3D%22translate(195%20215)%20scale(.9)%22%20fill%3D%22%23165b33%22%20fill-opacity%3D%22.14%22%3E%3Cpolygon%20points%3D%220%2C-26%2012%2C-8%20-12%2C-8%22%2F%3E%3Cpolygon%20points%3D%220%2C-16%2016%2C6%20-16%2C6%22%2F%3E%3Crect%20x%3D%22-3%22%20y%3D%226%22%20width%3D%226%22%20height%3D%227%22%2F%3E%3C%2Fg%3E%0A%3Cg%20transform%3D%22translate(15%20120)%20scale(.9)%22%20fill%3D%22%23165b33%22%20fill-opacity%3D%22.14%22%3E%3Cpolygon%20points%3D%220%2C-26%2012%2C-8%20-12%2C-8%22%2F%3E%3Cpolygon%20points%3D%220%2C-16%2016%2C6%20-16%2C6%22%2F%3E%3Crect%20x%3D%22-3%22%20y%3D%226%22%20width%3D%226%22%20height%3D%227%22%2F%3E%3C%2Fg%3E%0A%3Cg%20fill%3D%22%23c8102e%22%20fill-opacity%3D%22.2%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22190%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22106%22%20cy%3D%22193%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22112%22%20cy%3D%22190%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22195%22%20cy%3D%2295%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%22201%22%20cy%3D%2298%22%20r%3D%223%22%2F%3E%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+}
+
+[data-campaign="navidad"] body {
+  background-color: #fffaf0;
+  background-image: linear-gradient(rgba(255, 250, 240, 0.7), rgba(255, 250, 240, 0.7)), var(--navidad-pattern);
+  background-size: 220px 220px;
+}
+
+/* Las secciones dejan ver el fondo con adornos */
+[data-campaign="navidad"] .bg-background,
+[data-campaign="navidad"] .bg-white-secondary {
+  background: transparent;
+}
+
+[data-campaign="navidad"] section.bg-linear-to-b {
+  background-image: none;
+}
+
+/* Paneles flotantes (drawer y menú móvil) necesitan fondo sólido */
+[data-campaign="navidad"] .bg-background.transform,
+[data-campaign="navidad"] .bg-white-secondary.absolute {
+  background: #fffaf0;
+}
+
+[data-campaign="navidad"] body::before {
+  content: "🎄 ¡Felices Fiestas! 🎁";
+  display: block;
+  text-align: center;
+  padding: 0.4rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #165b33, #c8102e);
+  color: #fff;
+}
+
+/* Carrito: ícono blanco cuando no está en hover */
+[data-campaign="navidad"] button[aria-label^="Abrir carrito"]:not(:hover) {
+  color: #fff;
+}
+
+/* Insignias y precios sobre rojo: texto blanco ("¡Nuevo Hoy!") */
+[data-campaign="navidad"] .bg-colorUno.text-colorTres {
+  color: #fff;
+}
+
+/* Footer: letras blancas */
+[data-campaign="navidad"] footer .text-colorUno,
+[data-campaign="navidad"] footer .text-white\/70,
+[data-campaign="navidad"] .bg-gray-900 .text-colorUno {
+  color: #fff;
+}

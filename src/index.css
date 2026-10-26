@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import "./themes/halloween.css";
+@import "./themes/navidad.css";
+@import "./themes/pascua.css";
 
 @theme {
   --color-colorUno: #ffd23f;

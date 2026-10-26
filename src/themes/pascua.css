@@ -1,0 +1,61 @@
+/* Temática de Pascuas: todo scopeado a [data-campaign="pascua"] */
+[data-campaign="pascua"] {
+  --color-colorUno: #d6336c;
+  --color-colorDos: #4b3270;
+  --color-colorTres: #6a4c93;
+  --color-colorCuatro: #d9480f;
+  --color-cuartity: #c77d00;
+  --color-quintity: #5f7a5a;
+  --color-background: #fdf8ff;
+  --color-colorBorder: #e3d4f0;
+  --pascua-pattern: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22260%22%20height%3D%22260%22%20viewBox%3D%220%200%20260%20260%22%3E%3Cg%20transform%3D%22translate(55%2070)%20rotate(0)%20scale(1)%22%20fill%3D%22%236a4c93%22%20fill-opacity%3D%22.3%22%3E%3Cellipse%20cx%3D%22-7%22%20cy%3D%22-24%22%20rx%3D%224.5%22%20ry%3D%2214%22%2F%3E%3Cellipse%20cx%3D%227%22%20cy%3D%22-24%22%20rx%3D%224.5%22%20ry%3D%2214%22%2F%3E%3Cellipse%20cx%3D%22-7%22%20cy%3D%22-24%22%20rx%3D%222%22%20ry%3D%229%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.6%22%2F%3E%3Cellipse%20cx%3D%227%22%20cy%3D%22-24%22%20rx%3D%222%22%20ry%3D%229%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.6%22%2F%3E%3Ccircle%20cy%3D%220%22%20r%3D%2215%22%2F%3E%3Ccircle%20cx%3D%22-5.5%22%20cy%3D%22-2%22%20r%3D%222%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.95%22%2F%3E%3Ccircle%20cx%3D%225.5%22%20cy%3D%22-2%22%20r%3D%222%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.95%22%2F%3E%3Cellipse%20cy%3D%224%22%20rx%3D%222.5%22%20ry%3D%221.8%22%20fill%3D%22%23d6336c%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%22-10%22%20cy%3D%225%22%20r%3D%222.5%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.5%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%225%22%20r%3D%222.5%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.5%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(190%20185)%20rotate(-8)%20scale(0.95)%22%20fill%3D%22%23d6336c%22%20fill-opacity%3D%22.3%22%3E%3Cellipse%20cx%3D%22-7%22%20cy%3D%22-24%22%20rx%3D%224.5%22%20ry%3D%2214%22%2F%3E%3Cellipse%20cx%3D%227%22%20cy%3D%22-24%22%20rx%3D%224.5%22%20ry%3D%2214%22%2F%3E%3Cellipse%20cx%3D%22-7%22%20cy%3D%22-24%22%20rx%3D%222%22%20ry%3D%229%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.6%22%2F%3E%3Cellipse%20cx%3D%227%22%20cy%3D%22-24%22%20rx%3D%222%22%20ry%3D%229%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.6%22%2F%3E%3Ccircle%20cy%3D%220%22%20r%3D%2215%22%2F%3E%3Ccircle%20cx%3D%22-5.5%22%20cy%3D%22-2%22%20r%3D%222%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.95%22%2F%3E%3Ccircle%20cx%3D%225.5%22%20cy%3D%22-2%22%20r%3D%222%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.95%22%2F%3E%3Cellipse%20cy%3D%224%22%20rx%3D%222.5%22%20ry%3D%221.8%22%20fill%3D%22%23d6336c%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%22-10%22%20cy%3D%225%22%20r%3D%222.5%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.5%22%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%225%22%20r%3D%222.5%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.5%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(150%2055)%20rotate(12)%20scale(1)%22%3E%3Cellipse%20rx%3D%2214%22%20ry%3D%2219%22%20fill%3D%22%232f9e8f%22%20fill-opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M-13-3L-6.5%203L0-3L6.5%203L13-3%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.85%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22-5%22%20cy%3D%22-11%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%2211%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(40%20195)%20rotate(-10)%20scale(1)%22%3E%3Cellipse%20rx%3D%2214%22%20ry%3D%2219%22%20fill%3D%22%23f2b705%22%20fill-opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M-13-3L-6.5%203L0-3L6.5%203L13-3%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.85%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22-5%22%20cy%3D%22-11%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%2211%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(120%20140)%20rotate(6)%20scale(0.85)%22%3E%3Cellipse%20rx%3D%2214%22%20ry%3D%2219%22%20fill%3D%22%237950f2%22%20fill-opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M-13-3L-6.5%203L0-3L6.5%203L13-3%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.85%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22-5%22%20cy%3D%22-11%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%2211%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(230%2095)%20rotate(-14)%20scale(0.8)%22%3E%3Cellipse%20rx%3D%2214%22%20ry%3D%2219%22%20fill%3D%22%23fd7e14%22%20fill-opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M-13-3L-6.5%203L0-3L6.5%203L13-3%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.85%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22-5%22%20cy%3D%22-11%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%2211%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(215%20240)%20rotate(10)%20scale(0.7)%22%3E%3Cellipse%20rx%3D%2214%22%20ry%3D%2219%22%20fill%3D%22%23d6336c%22%20fill-opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M-13-3L-6.5%203L0-3L6.5%203L13-3%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.85%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22-5%22%20cy%3D%22-11%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%2211%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(90%20245)%20rotate(-6)%20scale(0.7)%22%3E%3Cellipse%20rx%3D%2214%22%20ry%3D%2219%22%20fill%3D%22%232f9e8f%22%20fill-opacity%3D%22.38%22%2F%3E%3Cpath%20d%3D%22M-13-3L-6.5%203L0-3L6.5%203L13-3%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.85%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22-5%22%20cy%3D%22-11%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%2211%22%20r%3D%222.2%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+[data-campaign="pascua"] body {
+  background-color: #fdf8ff;
+  background-image: linear-gradient(rgba(253, 248, 255, 0.7), rgba(253, 248, 255, 0.7)), var(--pascua-pattern);
+  background-size: 260px 260px;
+}
+
+/* Las secciones dejan ver el fondo con adornos */
+[data-campaign="pascua"] .bg-background,
+[data-campaign="pascua"] .bg-white-secondary {
+  background: transparent;
+}
+
+[data-campaign="pascua"] section.bg-linear-to-b {
+  background-image: none;
+}
+
+/* Paneles flotantes (drawer y menú móvil) necesitan fondo sólido */
+[data-campaign="pascua"] .bg-background.transform,
+[data-campaign="pascua"] .bg-white-secondary.absolute {
+  background: #fdf8ff;
+}
+
+[data-campaign="pascua"] body::before {
+  content: "🐣 ¡Felices Pascuas! 🐰";
+  display: block;
+  text-align: center;
+  padding: 0.4rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #6a4c93, #d6336c);
+  color: #fff;
+}
+
+/* Carrito: ícono blanco cuando no está en hover */
+[data-campaign="pascua"] button[aria-label^="Abrir carrito"]:not(:hover) {
+  color: #fff;
+}
+
+/* Insignias y precios sobre rojo: texto blanco ("¡Nuevo Hoy!") */
+[data-campaign="pascua"] .bg-colorUno.text-colorTres {
+  color: #fff;
+}
+
+/* Footer: letras blancas */
+[data-campaign="pascua"] footer .text-colorUno,
+[data-campaign="pascua"] footer .text-white\/70,
+[data-campaign="pascua"] .bg-gray-900 .text-colorUno {
+  color: #fff;
+}
