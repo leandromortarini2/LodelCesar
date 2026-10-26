@@ -29,7 +29,7 @@
 
 /* Paneles flotantes (drawer y menú móvil) necesitan fondo sólido */
 [data-campaign="pascua"] .bg-background.transform,
-[data-campaign="pascua"] .bg-white-secondary.absolute {
+[data-campaign="pascua"] .bg-white-secondary.fixed {
   background: #fdf8ff;
 }
 

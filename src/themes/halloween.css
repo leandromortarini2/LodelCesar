@@ -51,7 +51,7 @@
 
 /* Paneles flotantes (drawer y menú móvil) necesitan fondo propio */
 [data-campaign="halloween"] .bg-background.transform,
-[data-campaign="halloween"] .bg-white-secondary.absolute {
+[data-campaign="halloween"] .bg-white-secondary.fixed {
   background: linear-gradient(180deg, #101828 0%, #250229 100%);
 }
 

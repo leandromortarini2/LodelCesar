@@ -29,7 +29,7 @@
 
 /* Paneles flotantes (drawer y menú móvil) necesitan fondo sólido */
 [data-campaign="navidad"] .bg-background.transform,
-[data-campaign="navidad"] .bg-white-secondary.absolute {
+[data-campaign="navidad"] .bg-white-secondary.fixed {
   background: #fffaf0;
 }
 

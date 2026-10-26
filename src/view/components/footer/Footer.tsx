@@ -29,7 +29,7 @@ export default function Footer({
               Desarrollo web a medida para tu negocio. Escribime y charlamos.
             </span>
           </div>
-          <div className="flex items-center gap-4 font-semibold">
+          <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4 font-semibold">
             <a
               href="https://wa.me/5491126034427"
               target="_blank"
